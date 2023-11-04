@@ -17,7 +17,7 @@
     width: auto;
     display: grid;
     grid-template-columns: 30% 20% auto;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: #fff;
 }
 .footer-item-1{
@@ -40,7 +40,7 @@
     color: #fff;
     font-size: medium;
     line-height: 2em;
-    
+    padding: 10px;
 }
 .contact{
     list-style: none;
@@ -53,6 +53,11 @@
     line-height: 2em;
 
 }
+.wrapper{
+    margin-left: 30px;
+}
 .wrapper a {
-    color: #fff;
+    color: white;
+    margin-left: 10px;
+
 }
