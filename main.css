@@ -1,5 +1,8 @@
+
+
 .main-body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFF3E1;
 }
 .side_menu{
     list-style: none;
@@ -7,12 +10,71 @@
     padding: 0;
 
 }
+                                /*main heseg*/
 .main{
     width: 80%;
-    background-color: #fff;
+    background-color: #FFF3E1;
     margin: auto;
 }
 
+
+.main-branchCake{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 150px;
+    margin: 30px 0;
+}
+.main-branch{
+    background-color: #fff;
+    width: 38.5%;
+    
+}
+.main-cake{
+    background-color:#FFF3E1;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.cake{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 23%;
+    background-color: #fff;
+    text-align: center;
+    justify-content: space-between;
+
+    
+}
+
+.main-advertising{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.advertising-out{
+    background-color: #fff;
+    width: 69.3%;
+}
+.advertising-home{
+   background-color: bisque;
+width: 29%;
+}
+
+.main-special{
+    width: 100%;
+    background-color: #fff;
+    margin: 30px 0;
+}
+                               
+
+                            /*footer heseg*/
 .footer{
     width: auto;
     display: grid;
@@ -42,21 +104,21 @@
     line-height: 2em;
     padding: 10px;
 }
-.contact{
+.footer-contact{
     list-style: none;
 
 }
-.contact li a{
+.footer-contact li a{
     text-decoration: none;
     color: #fff;
     font-size: medium;
     line-height: 2em;
 
 }
-.wrapper{
+.footer-wrapper{
     margin-left: 30px;
 }
-.wrapper a {
+.footer-wrapper a {
     color: white;
     margin-left: 10px;
 
