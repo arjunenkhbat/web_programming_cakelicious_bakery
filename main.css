@@ -1,15 +1,61 @@
 
+                            /* header */
+header .container{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  background-color: #f4a395;
+}
+img.logo{
+  width: 30%;
+  margin-left: 40%;
+}
+header a{
+  color: white;
+ text-decoration: none;
+ font-size: 1.4rem;
+ padding-left: 2rem;
+}
+.header-item-1{
+padding-left: 3rem;
+}
+.header-item-3{
+  padding-left: 9rem;
+  }
+
+nav a{
+  text-decoration: none;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #7CA27E;
+}
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding-left: 14rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-decoration: none;
+}
+nav li a:hover {
+  background-color: #7CA27E;
+}
+
 
 .main-body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #FFF3E1;
 }
-.side_menu{
-    list-style: none;
-    margin: 0;
-    padding: 0;
 
-}
                                 /*main heseg*/
 .main{
     width: 80%;
@@ -17,6 +63,11 @@
     margin: auto;
 }
 
+.main-showcase{
+    background: url('./images_for_zorigoo/iStock-844714534.jpg') center center/cover;
+    height: 400px;
+    background-color: #fff;
+}
 
 .main-branchCake{
     display: flex;
@@ -27,10 +78,14 @@
     margin: 30px 0;
 }
 .main-branch{
-    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    background: url('./photos/download.jpg') center center/cover;
     width: 38.5%;
+    text-align: center;
     
 }
+
 .main-cake{
     background-color:#FFF3E1;
     width: 60%;
@@ -51,26 +106,53 @@
     
 }
 
+                                /*Сурталчилгаа гэрээр бялуу хийх */
 .main-advertising{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: max-content;
 
 }
 .advertising-out{
     background-color: #fff;
     width: 69.3%;
+    height: 250px;
+    background: url('./images_for_zorigoo/iStock-1126488287.jpg') center center/cover;
+
 }
 .advertising-home{
-   background-color: bisque;
-width: 29%;
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    width: 29%;
+    height: 250px;
+    background: url('./images_for_zorigoo/iStock-1010526696.jpg') center center/cover;
+    
+   
 }
 
 .main-special{
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    background-color: #fff;
+    color: #fff;
+    background: url('./images_for_zorigoo/iStock-1192522394.jpg') center center/cover;
     margin: 30px 0;
+    height: 500px;
+    text-align: center;
+    justify-content: center;
+}
+.btn{
+   
+    margin: 10px auto;
+    background-color: #7CA27E;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    border-color: #7CA27E;
+    
 }
                                
 
@@ -85,6 +167,7 @@ width: 29%;
 .footer-item-1{
     width: 80%;
     padding: 40px;
+    
 }
 .footer-item-3{
     margin-top: 16px;
