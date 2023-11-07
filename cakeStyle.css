@@ -1,24 +1,27 @@
 
-header .container{
+.cake-header .cake-container{
   display: grid;
   grid-template-columns: repeat(3, auto);
   align-items: center;
-  background-color: #f4a395;
+  background-color: var(--pink);
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 img.logo{
   width: 30%;
   margin-left: 40%;
 }
-header a{
+.cake-header a{
   color: white;
  text-decoration: none;
- font-size: 1.4rem;
+ font-size: var(--desktop-text-mid);
  padding-left: 2rem;
 }
-.header-item-1{
+.cake-header-item-1{
 padding-left: 3rem;
 }
-.header-item-3{
+.cake-header-item-3{
   padding-left: 9rem;
   }
 
