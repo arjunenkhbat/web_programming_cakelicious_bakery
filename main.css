@@ -100,7 +100,7 @@ nav li a:hover {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-
+    background: url(./photos/cake_b.png) no-repeat center center/cover;
     width: 31%;
     background-color: #fff;
     text-align: center;
