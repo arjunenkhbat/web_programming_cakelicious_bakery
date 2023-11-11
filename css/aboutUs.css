@@ -1,0 +1,18 @@
+.h2-class h2{
+    margin-left: 40%;
+    margin-top: 5%;
+}
+.about-article{
+    padding-top: 5%;
+}
+.about-article img{
+    width: 20%;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.about-article img:nth-of-type(1){
+    width: 19%;
+    height: auto;
+}
