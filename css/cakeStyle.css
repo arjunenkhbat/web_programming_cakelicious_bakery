@@ -56,3 +56,235 @@ nav li a:hover {
   grid-template-columns: repeat(4,1fr);
 }
 
+.cake-heseg h2{
+  margin-top: 3rem;
+  font-size: var(--desktop-text-xlarge);
+  margin-bottom: 3rem;
+  color: #61868C;
+}
+
+/*cake hajuu heseg*/
+.cake-sidebar{
+  background-image: url('/images/cake-sideeee.png');
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 434px;
+  margin-left: -2rem;
+}
+.cake-sidebar ul li{
+  text-decoration: none;
+  list-style: none;
+  margin-left: 4rem;
+  margin-top: 2.5rem;
+  color: var(--white);
+}
+.cake-sidebar ul{
+  padding-top: 1.5rem;
+}
+.cake-sidebar ul li:nth-child(1){
+  font-size: var(--desktop-text-mid);
+  padding-left: 4rem;
+  font-weight: 900;
+}
+
+
+/* cake card heseg*/
+.cake-card{
+  background-image: url('/photos/back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 14rem;
+  height: 16rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cake-card-title{
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.card-item-star-kk{
+  color: yellow;
+  margin: 0rem;
+}
+
+.cake-card-calorie{
+  opacity: 30%;
+  font-size: var(--desktop-text-xsmall);
+}
+
+.cake-btn-eat{
+  background-color: #f4a395;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.25rem;
+  color: #fff;
+  transform: translateX(5.5rem) translateY(-1rem);
+
+}
+.cake-card img{
+  width: 66%;
+  height: auto;
+  margin-left: 12%;
+  margin-top: -1.5rem;
+ 
+}
+br{
+  border-bottom:1px dashed black;
+  display:block;
+}
+
+/*cake1 card heseg*/
+.cake-card1{
+  background-image: url('/photos/back2.png');
+  background-repeat: no-repeat;
+  width: 35rem;
+  height: 30rem;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.cake-card1-title{
+  padding-top: 5rem;
+  padding-bottom: 0.5rem;
+}
+
+.card1-item-star-kk{
+  color: yellow;
+  margin: 0rem;
+  margin-bottom: 1rem;
+}
+
+.cake-card1-calorie{
+  opacity: 30%;
+  font-size: var(--desktop-text-xsmall);
+}
+
+.cake1-btn-eat{
+  background-color: #f4a395;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.25rem;
+  color: #fff;
+  transform: translateX(1.5rem) translateY(1rem);
+  font-size: 1.5rem;
+}
+.cake-card1 img{
+  width: 50%;
+  height: auto;
+  margin-left: 12%;
+  margin-top: -3rem;
+ 
+}
+br{
+  border-bottom:1px dashed black;
+  display:block;
+}
+/*cake1 card heseg*/
+.cake-card1{
+  background-image: url('/photos/back3.png');
+  background-repeat: no-repeat;
+  width: 25rem;
+  height: 22rem;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.cake-card1-title{
+  padding-top: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+.card1-item-star-kk{
+  color: yellow;
+  margin: 0rem;
+  margin-bottom: 1rem;
+}
+
+.cake-card1-calorie{
+  opacity: 30%;
+  font-size: var(--desktop-text-xsmall);
+}
+
+.cake1-btn-eat{
+  background-color: #f4a395;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.25rem;
+  color: #fff;
+  transform: translateX(0.2rem) translateY(1.2rem);
+  font-size: 1.5rem;
+}
+.cake-card1 img{
+  width: 50%;
+  height: auto;
+  margin-left: 20%;
+  margin-top: -3rem;
+ 
+}
+br{
+  border-bottom:1px dashed black;
+  display:block;
+}
+/*cake2 card heseg*/
+.cake-card2{
+  background-image: url('/photos/back4.png');
+  background-repeat: no-repeat;
+  width: 11rem;
+  height: 14rem;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.cake-card2-title{
+  padding-top: 3rem;
+  font-size: 0.8rem;
+  padding-left: 0.7rem;
+}
+
+.card2-item-star-kk{
+  color: yellow;
+  margin-left: 0.5rem;
+}
+
+.cake-card2-calorie{
+  opacity: 30%;
+  font-size: var(--desktop-text-xsmall);
+  margin-left: 0.5rem;
+}
+
+.cake2-btn-eat{
+  background-color: #f4a395;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.25rem;
+  color: #fff;
+  transform: translateX(3.6rem) translateY(-0.9rem);
+  font-size:1rem;
+}
+.cake-card2 img{
+  width: 60%;
+  height: auto;
+  margin-left: 13%;
+  margin-top: -1.5rem;
+ 
+}
+br{
+  border-bottom:1px dashed black;
+  display:block;
+}
+/*section1*/
+.cake-heseg-container1{
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+}
+/*cake-heseg-container2*/
+.cake-heseg-container2{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-row-gap: 1rem;
+  margin-bottom: 5rem;
+}
+
