@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 .cake-header .cake-container{
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -287,3 +288,10 @@ body{
     color: #fff;
     transform: translateX(6.4rem) translateY(-0.5rem);
 }
+=======
+
+/* header */
+
+
+
+>>>>>>> a6b9df427ea6440f3afa5a5b60dfa81515372557

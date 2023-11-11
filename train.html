@@ -2,7 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="train.css">
+        <link rel="stylesheet" href="style.css">
+       
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined:opsz,wght@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
         <title>Сургалт</title>
         <script>
             class cake{
@@ -13,67 +17,66 @@
                         {
                         name: "FRESH DELICIOUS CAKE",
                         calories: 500,
-                        img: "cake1.jpg",
+                        img: "./photos/cake1.jpg",
                         rt: 5.0,
                         },
                         {
                         name: "sabvsd",
                         calories: 500,
-                        img: "cake1.jpg",
+                        img: "./photos/cake1.jpg",
                         rt: 5.0,
                         },
                         {
                         name: "FRESH DELICIOUS CAKE",
                         calories: 500,
-                        img: "cake1.jpg",
+                        img: "./photos/cake1.jpg",
                         rt: 5.0,
                         },
                         {
                         name: "FRESH DELICIOUS CAKE",
                         calories: 500,
-                        img: "cake1.jpg",
+                        img: "./photos/cake1.jpg",
                         rt: 5.0,
                         },
                         {
                         name: "FRESH DELICIOUS CAKE",
                         calories: 500,
-                        img: "cake1.jpg",
+                        img: "./photos/cake1.jpg",
                         rt: 5.0,
                         },
                         {
                         name: "FRESH DELICIOUS CAKE",
                         calories: 500,
-                        img: "cake1.jpg",
+                        img: "./photos/cake1.jpg",
                         rt: 5.0,
                         },
                         {
                         name: "FRESH DELICIOUS CAKE",
                         calories: 500,
-                        img: "cake1.jpg",
+                        img: "./photos/cake1.jpg",
                         rt: 5.0,
                         },
                         {
                         name: "FRESH DELICIOUS CAKE",
                         calories: 500,
-                        img: "cake1.jpg",
+                        img: "./photos/cake1.jpg",
                         rt: 5.0,
                         },
                         {
                         name: "FRESH DELICIOUS CAKE",
                         calories: 500,
-                        img: "cake1.jpg",
+                        img: "./photos/./photos/cake1.jpg",
                         rt: 5.0,
                         },
                         {
                         name: "FRESH DELICIOUS CAKE",
                         calories: 500,
-                        img: "cake1.jpg",
+                        img: "./photos/cake1.jpg",
                         rt: 5.0,
                         },          
                     ]; 
                     const p = cak;
-                        let data = `
-                        <section>`;
+                        let data = `<section>`;
                     for( const product of p){
                         const prod=new Product(product);
                         data += prod.Render();
@@ -100,7 +103,7 @@
                     <li>Калори:${this.calories}</li>
                     <hr>
                     <li><img src="${this.img}" alt="cake_image"></li>
-                    <li><button><img src="sags.jpg" alt="sags"> Идье +</button></li>
+                    <li><button><img src="./photos/sags.jpg" alt="sags"> Идье +</button></li>
                 </ul>
             </article>`
             }
@@ -108,18 +111,61 @@
         </script>
     </head>
     <body>
-        <header>
-        </header>
+      <header class="cake-header">
+        <div class="cake-container">
+  
+      <div class="header-item-1">
+        
+        <div class="logo1">
+        <a href="#" class="icon facebook">
+          <span><i class="fab fa-facebook-f"></i></span>
+        </a>
+        <a href="#" class="icon instagram">
+          <span><i class="fab fa-instagram"></i></span>
+        </a>
+  
+        <a href="#" class="icon youtube">
+          <span><i class="fab fa-youtube"></i></span>
+        </a>
+      </div>
+      </div>
+  
+      <div class="header-item-2">
+        <img class="logo" src="headerLogo.png" alt="logo">
+      </div>
+  
+      <div class="header-item-3">
+        <div class="icon_cart_globe">
+        <a href="#" class="icon cart">
+          <span><i class="fa fa-shopping-cart"></i></span>
+        </a>
+        <a href="#" class="icon globe">
+          <span><i class="fas fa-globe"></i></span>
+        </a>
+      </div>
+    </div>
+    </div>
+    </header>
+  
+      
+      <nav>
+        <ul>
+          <li><a href="#">Танилцуулга</a></li>
+          <li><a href="#">Бүтээгдэхүүн</a></li>
+          <li><a href="#">Сургалт</a></li>
+          <li><a href="#">Онцгой</a></li>
+        </ul>
+      </nav>  
         <main>
             <section>
                 <article class="art">
                     <h>БЯЛУУ ГЭРТЭЭ ХИЙХ НЬ</h>
                     <ul>
-                        <li><a href="https://www.youtube.com/watch?v=8-5yLt1gqIo"><img class="train" src="byluu.jpg" alt="Training_video" ></a></li>
-                        <img src="star.png" alt="star">
-                        <img src="star.png" alt="star">
-                        <img src="star.png" alt="star">
-                        <img src="star.png" alt="star">
+                        <li><a href="https://www.youtube.com/watch?v=8-5yLt1gqIo"><img class="train" src="./photos/byluu.jpg" alt="Training_video" ></a></li>
+                        <img src="./photos/./photos/star.png" alt="star">
+                        <img src="./photos/star.png" alt="star">
+                        <img src="./photos/star.png" alt="star">
+                        <img src="./photos/star.png" alt="star">
                         <a class="a1">#бялуу#амттай#шоколад#гэртээ</a>
                     </ul>
                 </article>
@@ -147,8 +193,40 @@
             <section id="app">
             </section>
         </main>
-        <footer>
-        </footer>
+        <footer class="footer">
+          <div class="footer-item-1">
+              
+          </div>
+          <div class="footer-item-2">
+             <ul class="footer-menu">
+              <li><a href="Бидний тухай.html">Бидний тухай</a></li>
+              <li> <a href="Нийгмийн хариуцлага.html">Нийгмийн хариуцлага</a></li>
+              <li><a href="Үйлчилгээний нөхцөл.html">Үйлчилгээний нөхцөл</a></li>
+              <li><a href="Нууцлалын бодлого.hmtl">Нууцлалын бодлого</a></li>
+             </ul>
+          </div>
+          <div class="footer-item-3">
+              <ul class="footer-contact">
+                  <li><a href="">холбоо барих</a></li>
+                  <li><a href="">99110247</a></li>
+              </ul>
+              
+              
+              <div class="footer-wrapper">
+                  <a href="#" class="icon facebook">
+                    <span><i class="fab fa-facebook-f"></i></span>
+                  </a>
+            
+                  <a href="#" class="icon instagram">
+                    <span><i class="fab fa-instagram"></i></span>
+                  </a>
+                  <a href="#" class="icon youtube">
+                    <span><i class="fab fa-youtube"></i></span>
+                  </a>
+                </div>
+          </div>
+      
+      </footer>
     </body>
     <script>
         var app = new cake();

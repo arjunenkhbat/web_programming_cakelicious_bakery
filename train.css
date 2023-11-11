@@ -6,6 +6,8 @@
     --color-white: white;
 }
 
+  
+
 body{
     background-color: var(--color-body);
     & img{
