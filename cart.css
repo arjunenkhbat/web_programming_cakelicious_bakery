@@ -1,44 +1,45 @@
 
-
-/* header */
-header .container{
+.cake-header .cake-container{
     display: grid;
     grid-template-columns: repeat(3, auto);
     align-items: center;
     background-color: #f4a395;
-}
-img.logo{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  img.logo{
     width: 30%;
     margin-left: 40%;
-}
-header a{
+  }
+  .cake-header a{
     color: white;
-text-decoration: none;
-font-size: 1.4rem;
-padding-left: 2rem;
-}
-.header-item-1{
-padding-left: 3rem;
-}
-.header-item-3{
+   text-decoration: none;
+   font-size: var(--desktop-text-mid);
+   padding-left: 2rem;
+  }
+  .cake-header-item-1{
+  padding-left: 3rem;
+  }
+  .cake-header-item-3{
     padding-left: 9rem;
     }
-
-nav a{
+  
+  nav a{
     text-decoration: none;
-}
-nav ul {
+  }
+  nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #7CA27E;
-}
-nav li {
+  }
+  nav li {
     float: left;
-}
-
-nav li a {
+  }
+  
+  nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -46,10 +47,12 @@ nav li a {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     text-decoration: none;
-}
-nav li a:hover {
-    background-color: #7CA27E;
-}
+  }
+  nav li a:hover {
+    background-color: var(--pink);
+  }
+  
+  
 
 
 .footer{
@@ -100,4 +103,187 @@ nav li a:hover {
     color: white;
     margin-left: 10px;
 
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    
+}
+body{
+    background-color: #FFF3E1;
+}
+
+
+/* Khulan bichsin*/
+
+.big-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.cart-header{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cart-header-icon{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.cart-header-title{
+    margin-right: auto;
+}
+
+.cart-btn{
+    border-radius: 0.25rem;
+    border: none;
+    background-color: #7CA27E;
+    color: #fff;
+    padding: 0rem 0.5rem;
+}
+
+.cart-item-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 70%;
+}
+
+.cart-item{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem 0 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 0.25rem;
+}
+
+.cart-item-img{
+    width: 10rem;
+    height: 9rem;
+}
+
+.cart-item-name{
+    font-size: 1.25rem;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.cart-item-star{
+    color: yellow;
+}
+
+.cart-item-button-container{
+    display: flex;
+    gap: 0;
+}
+
+.cart-btn-k{
+    width: 2rem;
+    border-radius: 0.25rem 0 0 0.25rem;
+    border: none;
+    background-color: #7CA27E;
+    color: #fff;
+    padding: 0.5rem 0.5rem;
+}
+
+.cart-btn-kk{
+    width: 2rem;
+    border-radius: 0rem;
+    border: none;
+    background-color: #7CA27E;
+    color: #fff;
+    padding: 0.5rem 0.5rem;
+}
+.cart-btn-kkk{
+    margin: 0;
+    width: 2rem;
+    border-radius: 0 0.25rem 0.25rem 0;
+    border: none;
+    background-color: #7CA27E;
+    color: #fff;
+    padding: 0.5rem 0.5rem;
+}
+
+.cart-item-perprice, 
+.cart-item-totalprice{
+    font-size: 1.25rem;
+}
+
+.fa-trash{
+    color: #7CA27E;
+    font-size: 1.25rem;
+}
+
+.cart-calculator{
+    background-color: #fff;
+    padding: 0.5rem 2rem;
+    width: 25%;
+    height: 50%;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.cart-calculator-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-addbtn{
+    border-radius: 0.25rem;
+    border: none;
+    background-color: #7CA27E;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+    margin: 2rem 0 1rem 0;
+}
+
+.recommendation-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 0 4rem 0;
+}
+
+.cake-recommendation{
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 16rem;
+    height: 18rem;
+    border-radius: 0.75rem;
+    text-align: center;
+}
+
+.cake-recommendation-title{
+    padding-top: 3rem;
+    padding-bottom: 0;
+}
+
+.cart-item-star-kk{
+    color: yellow;
+    margin: -1rem;
+}
+
+.cake-recommendation-calorie{
+    opacity: 30%;
+    font-size: 1rem;
+}
+
+.btn-eat{
+    background-color: #f4a395;
+    border: none;
+    border-radius: 0.75rem;
+    padding: 0.25rem;
+    color: #fff;
+    transform: translateX(6.4rem) translateY(-0.5rem);
 }

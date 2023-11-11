@@ -49,6 +49,6 @@ nav li a {
   text-decoration: none;
 }
 nav li a:hover {
-  background-color: #7CA27E;
+  background-color: var(--pink);
 }
 
