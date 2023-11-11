@@ -141,7 +141,7 @@
 }
 
 .cake-recommendation{
-    background-image: url('background.png');
+    background-image: url('/photos/back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 16rem;
@@ -157,7 +157,7 @@
 
 .cart-item-star-kk{
     color: yellow;
-    margin: -1rem;
+    margin: 1rem;
 }
 
 .cake-recommendation-calorie{
@@ -172,4 +172,8 @@
     padding: 0.25rem;
     color: #fff;
     transform: translateX(6.4rem) translateY(-0.5rem);
+}
+.cake-recommendation img{
+    width: 55%;
+    height: auto;
 }
