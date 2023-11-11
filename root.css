@@ -44,6 +44,5 @@ body {
 }
 .container{
     margin: auto;
-    padding: 0 10rem;
-    overflow: hidden;
+    width: 80%;
 }
