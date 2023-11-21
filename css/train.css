@@ -1,10 +1,4 @@
-:root{
-    --color-body: #FFF3E1;
-    --color-h:#61868C;
-    --color-pink: pink;
-    --color-black: black;
-    --color-white: white;
-}
+
 
   
 
@@ -38,7 +32,7 @@ body{
                     & .a1{
                         margin-left: 40%;
                         font-weight: bold;
-                        font-size: 1.4rem;
+                        font-size: 1rem;
                         color: var(--color-h);
                     }
                     & li{
@@ -75,7 +69,7 @@ body{
                     width: 75%;
                     list-style:circle;
                     & li{
-                        font-size: 1.4rem;
+                        font-size: 1rem;
                         color: var(--color-h);
                     }
                 }
@@ -88,9 +82,9 @@ body{
                 margin:1rem;
                 width: 22%;
                 & h{
-                    height: 5rem;
+                    height: 3rem;
                     margin-left: 0rem;
-                    font-size: 0.8rem;
+                    font-size: 0.5rem;
                     color: var(--color-black);
                 }
                 & img{

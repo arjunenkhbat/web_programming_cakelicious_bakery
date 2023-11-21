@@ -9,96 +9,106 @@
 
         <title>Сургалт</title>
         <script>
-          class cake{
-              constructor(){
-              }
-              List(){
-                  const cak = [
-                      {
-                      name: "FRESH DELICIOUS CAKE",
-                      calories: 500,
-                      img: "../photos/cake1.jpg",
-                      rt: 5.0,
-                      },
-                      {
-                      name: "sabvsd",
-                      calories: 500,
-                      img: "../images/cake2.png",
-                      rt: 5.0,
-                      },
-                      {
-                      name: "FRESH DELICIOUS CAKE",
-                      calories: 500,
-                      img: "./photos/cake1.jpg",
-                      rt: 5.0,
-                      },
-                      {
-                      name: "FRESH DELICIOUS CAKE",
-                      calories: 500,
-                      img: "./photos/cake1.jpg",
-                      rt: 5.0,
-                      },
-                      {
-                      name: "FRESH DELICIOUS CAKE",
-                      calories: 500,
-                      img: "./photos/cake1.jpg",
-                      rt: 5.0,
-                      },
-                      {
-                      name: "FRESH DELICIOUS CAKE",
-                      calories: 500,
-                      img: "./photos/cake1.jpg",
-                      rt: 5.0,
-                      },
-                      {
-                      name: "FRESH DELICIOUS CAKE",
-                      calories: 500,
-                      img: "./photos/cake1.jpg",
-                      rt: 5.0,
-                      },
-                      {
-                      name: "FRESH DELICIOUS CAKE",
-                      calories: 500,
-                      img: "./photos/cake1.jpg",
-                      rt: 5.0,
-                      },
-                         
-                  ]; 
-                  const p = cak;
-                      let data = `<section>`;
-                  for( const product of p){
-                      const prod=new Product(product);
-                      data += prod.Render();
-                  }
-                  data+="</section>";
-                  
-                  document.getElementById("app").insertAdjacentHTML("beforeend", data);
-              }
-          }
-          class Product {
-          constructor(product) {
-              this.name = product.name;
-              this.img = product.img;
-              this.calories = product.calories;
-              this.rt = product.rt;
-          }
-          
-          Render(){
-              return `
-          <article>
-              <ul>
-                  <li><h>${this.name}</h></li>
-                  <li>Үнэлгээ:${this.rt}</li>
-                  <li>Калори:${this.calories}</li>
-                  <hr>
-                  <li><img src="${this.img}" alt="cake_image"></li>
-                  <li><button><img src="../photos/sags.jpg" alt="sags"> Идье +</button></li>
-              </ul>
-          </article>`
-          }
-      }
-      </script>
- 
+            class cake{
+                constructor(){
+                }
+                List(){
+                    const cak = [
+                        {
+                        name: "FRESH DELICIOUS CAKE",
+                        calories: 500,
+                        img: "./photos/cake1.jpg",
+                        rt: 5.0,
+                        },
+                        {
+                        name: "sabvsd",
+                        calories: 500,
+                        img: "./photos/cake1.jpg",
+                        rt: 5.0,
+                        },
+                        {
+                        name: "FRESH DELICIOUS CAKE",
+                        calories: 500,
+                        img: "./photos/cake1.jpg",
+                        rt: 5.0,
+                        },
+                        {
+                        name: "FRESH DELICIOUS CAKE",
+                        calories: 500,
+                        img: "./photos/cake1.jpg",
+                        rt: 5.0,
+                        },
+                        {
+                        name: "FRESH DELICIOUS CAKE",
+                        calories: 500,
+                        img: "./photos/cake1.jpg",
+                        rt: 5.0,
+                        },
+                        {
+                        name: "FRESH DELICIOUS CAKE",
+                        calories: 500,
+                        img: "./photos/cake1.jpg",
+                        rt: 5.0,
+                        },
+                        {
+                        name: "FRESH DELICIOUS CAKE",
+                        calories: 500,
+                        img: "./photos/cake1.jpg",
+                        rt: 5.0,
+                        },
+                        {
+                        name: "FRESH DELICIOUS CAKE",
+                        calories: 500,
+                        img: "./photos/cake1.jpg",
+                        rt: 5.0,
+                        },
+                        {
+                        name: "FRESH DELICIOUS CAKE",
+                        calories: 500,
+                        img: "./photos/./photos/cake1.jpg",
+                        rt: 5.0,
+                        },
+                        {
+                        name: "FRESH DELICIOUS CAKE",
+                        calories: 500,
+                        img: "./photos/cake1.jpg",
+                        rt: 5.0,
+                        },          
+                    ]; 
+                    const p = cak;
+                        let data = `<section>`;
+                    for( const product of p){
+                        const prod=new Product(product);
+                        data += prod.Render();
+                    }
+                    data+="</section>";
+                    
+                    document.getElementById("app").insertAdjacentHTML("beforeend", data);
+                }
+            }
+            class Product {
+            constructor(product) {
+                this.name = product.name;
+                this.img = product.img;
+                this.calories = product.calories;
+                this.rt = product.rt;
+            }
+            
+            Render(){
+                return `
+            <article>
+                <ul>
+                    <li><h>${this.name}</h></li>
+                    <li>Үнэлгээ:${this.rt}</li>
+                    <li>Калори:${this.calories}</li>
+                    <hr>
+                    <li><img src="${this.img}" alt="cake_image"></li>
+                    <li><button><img src="./photos/sags.jpg" alt="sags"> Идье +</button></li>
+                </ul>
+            </article>`
+            }
+        }
+        </script>
     </head>
     <body>
       <header class="cake-header">
@@ -121,13 +131,13 @@
       </div>
   
       <div class="header-item-2">
-        <img src="/images/removedBg-logo.png" alt="">
+        <img class="logo" src="headerLogo.png" alt="logo">
       </div>
   
       <div class="header-item-3">
         <div class="icon_cart_globe">
-        <a href="#" class="icon cart">
-          <span><i class="fa fa-shopping-cart"></i></span>
+        <a href="#" class="icon cart" id="cart-icon">
+          <span id="cartCount">0</span><i class="fa fa-shopping-cart"></i>
         </a>
         <a href="#" class="icon globe">
           <span><i class="fas fa-globe"></i></span>
