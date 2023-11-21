@@ -9,10 +9,11 @@ body{
         height: 1rem;
     }
     & main{
-        margin-left: 2rem;
+        margin: auto;
+        width: 80%;
         & h{
             font-weight: bold;
-            margin-left: 2rem;
+            margin: auto;
             font-size: 3rem;
             color: var(--color-h);
         }
@@ -20,7 +21,7 @@ body{
             display: flex;
             flex-flow: row wrap;
             & article{
-                background-image: url('back.jpg');
+                background-image: url('../photos/back.jpg');
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
                 background-position: center center;
@@ -64,7 +65,7 @@ body{
             & .art1{
                 width: 35%;
                 & ul{
-                    margin-left: 2rem;
+                    margin: auto;
                     width: 75%;
                     list-style:circle;
                     & li{
@@ -75,10 +76,11 @@ body{
             }
         }
         & #app{
+            text-align: center;
             & article{
                 text-align: center;
-                margin: 1rem;
-                width: 17%;
+                margin:1rem;
+                width: 22%;
                 & h{
                     height: 3rem;
                     margin-left: 0rem;
@@ -87,8 +89,8 @@ body{
                 }
                 & img{
                     margin-left: 0rem;
-                    width: 90%;
-                    height: 90%;
+                    width: 80%;
+                    height: 80%;
                     border-radius: 5rem;
                 }
                 & ul{
