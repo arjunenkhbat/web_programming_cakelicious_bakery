@@ -15,10 +15,11 @@ body{
         height: 1rem;
     }
     & main{
-        margin-left: 2rem;
+        margin: auto;
+        width: 80%;
         & h{
             font-weight: bold;
-            margin-left: 2rem;
+            margin: auto;
             font-size: 3rem;
             color: var(--color-h);
         }
@@ -70,7 +71,7 @@ body{
             & .art1{
                 width: 35%;
                 & ul{
-                    margin-left: 2rem;
+                    margin: auto;
                     width: 75%;
                     list-style:circle;
                     & li{
@@ -81,10 +82,11 @@ body{
             }
         }
         & #app{
+            text-align: center;
             & article{
                 text-align: center;
-                margin: 3rem;
-                width: 17%;
+                margin:1rem;
+                width: 22%;
                 & h{
                     height: 5rem;
                     margin-left: 0rem;
