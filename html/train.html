@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -14,65 +15,65 @@
                 }
                 List(){
                     const cak = [
-                        {
+                        {id:1,
                         name: "FRESH DELICIOUS CAKE",
                         calories: 500,
-                        img: "../images/cake1.jpg",
+                        img: "../photos/cake1.jpg",
                         
                         rt: 5.0,
                         },
                         {
-                        name: "sabvsd",
+                        name: "FRESH DELICIOUS CAKE",
                         calories: 500,
-                        img: "./photos/cake1.jpg",
+                        img: "../photos/cake1.jpg",
                         rt: 5.0,
                         },
                         {
                         name: "FRESH DELICIOUS CAKE",
                         calories: 500,
-                        img: "./photos/cake1.jpg",
+                        img: "../photos/cake1.jpg",
                         rt: 5.0,
                         },
                         {
                         name: "FRESH DELICIOUS CAKE",
                         calories: 500,
-                        img: "./photos/cake1.jpg",
+                        img: "../photos/cake1.jpg",
                         rt: 5.0,
                         },
                         {
                         name: "FRESH DELICIOUS CAKE",
                         calories: 500,
-                        img: "./photos/cake1.jpg",
+                        img: "../photos/cake1.jpg",
                         rt: 5.0,
                         },
                         {
                         name: "FRESH DELICIOUS CAKE",
                         calories: 500,
-                        img: "./photos/cake1.jpg",
+                        img: "../photos/cake1.jpg",
                         rt: 5.0,
                         },
                         {
                         name: "FRESH DELICIOUS CAKE",
                         calories: 500,
-                        img: "./photos/cake1.jpg",
+                        img: "../photos/cake1.jpg",
                         rt: 5.0,
                         },
                         {
                         name: "FRESH DELICIOUS CAKE",
                         calories: 500,
-                        img: "./photos/cake1.jpg",
+                        img: "../photos/cake1.jpg",
                         rt: 5.0,
                         },
                         {
                         name: "FRESH DELICIOUS CAKE",
                         calories: 500,
-                        img: "./photos/./photos/cake1.jpg",
+                        img: "../photos/cake1.jpg",
                         rt: 5.0,
                         },
                         {
                         name: "FRESH DELICIOUS CAKE",
                         calories: 500,
-                        img: "./photos/cake1.jpg",
+                        img: "../photos/cake1.jpg",
                         rt: 5.0,
                         },          
                     ]; 
@@ -89,6 +90,7 @@
             }
             class Product {
             constructor(product) {
+              this.id = product.id;
                 this.name = product.name;
                 this.img = product.img;
                 this.calories = product.calories;
@@ -96,19 +98,33 @@
             }
             
             Render(){
-                return `
-            <article>
-                <ul>
-                    <li><h>${this.name}</h></li>
-                    <li>Үнэлгээ:${this.rt}</li>
-                    <li>Калори:${this.calories}</li>
-                    <hr>
-                    <li><img src="${this.img}" alt="cake_image"></li>
-                    <li><button><img src="./photos/sags.jpg" alt="sags"> Идье +</button></li>
-                </ul>
-            </article>`
-            }
-        }
+                  return `
+              <article>
+                  <ul>
+                      <li><h>${this.name}</h></li>
+                      <li>Үнэлгээ:${this.rt}</li>
+                      <li>Калори:${this.calories}</li>
+                      <hr>
+                      <li><img src="${this.img}" alt="cake_image"></li>
+                      <li><button id="button" onclick="CartCounter(this.id)"><img src="../photos/sags.jpg" alt="sags"> Идье +</button></li>
+                  </ul>
+              </article>`
+              }
+          }
+
+          const cartIcon = document.getElementById("cart-icon");
+          const button = document.getElementById("button");
+          button.addEventListener('click', CartCounter);
+          
+          console.log(count);
+          
+
+          function CartCounter() {
+            const count = document.getElementById("cartCount");
+            var c = parseInt(count.textContent);
+            c++;
+            count.textContent = c;
+          }
         </script>
     </head>
     <body>
@@ -132,7 +148,7 @@
       </div>
   
       <div class="header-item-2">
-        <img class="logo" src="headerLogo.png" alt="logo">
+        <img class="logo" src="/images/removedBg-logo.png" alt="logo">
       </div>
   
       <div class="header-item-3">
@@ -156,23 +172,23 @@
           <li><a href="#">Сургалт</a></li>
           <li><a href="#">Онцгой</a></li>
         </ul>
-      </nav>
+      </nav>  
         <main>
             <section>
                 <article class="art">
                     <h>БЯЛУУ ГЭРТЭЭ ХИЙХ НЬ</h>
                     <ul>
-                        <li><a href="https://www.youtube.com/watch?v=8-5yLt1gqIo"><img class="train" src="./photos/byluu.jpg" alt="Training_video" ></a></li>
-                        <img src="./photos/./photos/star.png" alt="star">
-                        <img src="./photos/star.png" alt="star">
-                        <img src="./photos/star.png" alt="star">
-                        <img src="./photos/star.png" alt="star">
+                        <li><a href="https://www.youtube.com/watch?v=8-5yLt1gqIo"><img class="train" src="../photos/byluu.jpg" alt="Training_video" ></a></li>
+                        <img src="../photos/star.png" alt="star">
+                        <img src="../photos/star.png" alt="star">
+                        <img src="../photos/star.png" alt="star">
+                        <img src="../photos/star.png" alt="star">
                         <a class="a1">#бялуу#амттай#шоколад#гэртээ</a>
                     </ul>
                 </article>
                 <article class="art1">
                     <p>Шоколадтай бялуу</p>
-                    <hr>
+                    <br><hr><br>
                     <h class="orts">Орц:</h>
                     <ul>
                         <li>Шилэн аягаар нэг бүтэн болон дөрөвний гурваар гурил</li>
