@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    margin: 30px 0;
 }
 
 .cart-header{
@@ -24,6 +25,7 @@
 
 .cart-header-title{
     margin-right: auto;
+    
 }
 
 .cart-btn{
@@ -32,6 +34,10 @@
     background-color: #7CA27E;
     color: #fff;
     padding: 0rem 0.5rem;
+}
+
+.recommendation{
+    margin-top: 30px;
 }
 
 .cart-item-container{
