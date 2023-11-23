@@ -60,4 +60,8 @@
     background-color: #7CA27E;
   }
   
-  
+  .main{
+    width: 85%;
+    background-color: #FFF3E1;
+    margin: auto;
+}

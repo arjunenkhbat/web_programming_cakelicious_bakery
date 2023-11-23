@@ -2,7 +2,12 @@
 
 
 /* Khulan bichsin*/
-
+.cake-total{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .big-container{
     display: flex;
     flex-direction: row;
@@ -45,6 +50,7 @@
     flex-direction: column;
     gap: 2rem;
     width: 70%;
+
 }
 
 .cart-item{
@@ -117,10 +123,12 @@
 .cart-calculator{
     background-color: #fff;
     padding: 0.5rem 2rem;
-    width: 25%;
+    width: 20%;
     height: 50%;
     border-radius: 0.25rem;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    
 }
 
 .cart-calculator-container{
