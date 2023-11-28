@@ -8,11 +8,7 @@
 }
 
                                 /*main heseg*/
-.main{
-    width: 80%;
-    background-color: #FFF3E1;
-    margin: auto;
-}
+
 
 .main-showcase{
     background: url('../images_for_zorigoo/iStock-844714534.jpg') center center/cover;
@@ -47,18 +43,7 @@
     flex-wrap: wrap;
 
 }
-.cake{
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    background: url('../photos/back.jpg') no-repeat center center/cover;
-    width: 31%;
-    background-color: #fff;
-    text-align: center;
-    justify-content: space-between;
 
-    
-}
 
                                 /*Сурталчилгаа гэрээр бялуу хийх */
 .main-advertising{
@@ -99,6 +84,7 @@ margin: 100px 30px;
     background: url('../images_for_zorigoo/iStock-1010526696.jpg') center center/cover;
     text-align: center;
     justify-content: center;
+    
   
 }
 

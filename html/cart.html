@@ -9,122 +9,276 @@
     <link rel="stylesheet" href="/css/style.css">
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined:opsz,wght@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   </head>
 <body>
-    <header class="header">
-        <div class="container">
+    <header class="cake-header">
+        <div class="cake-container">
   
-  <nav>
-    <ul>
-      <li><a href="#">Танилцуулга</a></li>
-      <li><a href="#">Бүтээгдэхүүн</a></li>
-      <li><a href="#">Сургалт</a></li>
-      <li><a href="#">Онцгой</a></li>
-    </ul>
-  </nav>
-<main>
-    <div>
+      <div class="header-item-1">
         
-        <img src="" alt="<- icon">
-        <p>Таны сагс</p>
+        <div class="logo1">
+        <a href="#" class="icon facebook">
+          <span><i class="fab fa-facebook-f"></i></span>
+        </a>
+        <a href="#" class="icon instagram">
+          <span><i class="fab fa-instagram"></i></span>
+        </a>
+  
+        <a href="#" class="icon youtube">
+          <span><i class="fab fa-youtube"></i></span>
+        </a>
+      </div>
+      </div>
+  
+      <div class="header-item-2">
+        <img src="/images/removedBg-logo.png" alt="">
+      </div>
+  
+      <div class="header-item-3">
+        <div class="icon_cart_globe">
+        <a href="#" class="icon cart">
+          <span><i class="fa fa-shopping-cart"></i></span>
+        </a>
+        <a href="#" class="icon globe">
+          <span><i class="fas fa-globe"></i></span>
+        </a>
+      </div>
+    </div>
+    </div>
+    </header>
+    <nav>
+        <ul>
+        <li><a href="#">Танилцуулга</a></li>
+        <li><a href="#">Бүтээгдэхүүн</a></li>
+        <li><a href="#">Сургалт</a></li>
+        <li><a href="#">Онцгой</a></li>
+        </ul>
+    </nav>
+
+<main>
+    <div class="cart-header">
+        <i class='far fa-arrow-alt-circle-left' style='font-size:24px'></i>
+        <h3 class="cart-header-title">Таны сагс</h3>
     
-        <button>
-            <img src="" alt="+ icon">
-            <p>Дахиад бялуу авмаар байна уу</p>
+        <button class="cart-btn ">
+            <i class="fa fa-plus" style="font-size:12px"></i>
+            <p >Дахиад бялуу авмаар байна уу</p>
         </button>
     </div>
-    <section>
-        <div >
-            <img src="" alt="byluunii zurag1">
-            <div>
-                <p>byluunii ner</p>
-                <img src="" alt="star">
-                <p>calor</p>
-            </div>
-            <p>negj byluunii une</p>
-            <button>
+    <section class="cake-total">
+
+
+        <section class="cart-item-container">
+            <div class="cart-item">
+                <img class="cart-item-img" src="../images/cake1.png" alt="byluunii zurag1" >
+               
+                <div >
+                    <p class="cart-item-name">Fresh delicious cake</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>calor</p>
+                </div>
+                <p class="cart-item-perprice">30000</p>
+                <div class="cart-item-button-container">
                 
-                    <img src="" alt="- icon">
-                    <p>Тоо</p>
-                    <img src="" alt="+ icon">
-            
-            </button>
-            <p>niit byluunii une</p>
-            <img src="" alt="delete icon">
-        </div>
-        <div>
-            <img src="" alt="byluunii zurag2">
-            <div>
-                <p>byluunii ner</p>
-                <img src="" alt="star">
-                <p>calor</p>
-            </div>
-            <p>negj byluunii une</p>
-            <button>
-            
-                    <img src="" alt="- icon">
-                    <p>Тоо</p>
-                    <img src="" alt="+ icon">
-            
-            </button>
-            <p>niit byluunii une</p>
-            <img src="" alt="delete icon">
-        </div>
-        <div>
-            <img src="" alt="byluunii zurag3">
-            <div>
-                <p>byluunii ner</p>
-                <img src="" alt="star">
-                <p>calor</p>
-            </div>
-            <div class="cake-recommendation">
-                <h4 class="cake-recommendation-title">Fresh delicious cake</h4>
-                <div class="cart-item-star-kk">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                    <button class="cart-btn-k">-</button>
+                    <button class="cart-btn-kk">0</button>
+                    <button class="cart-btn-kkk">+</button>
                 </div>
-                <p class="cake-recommendation-calorie">калори: 500</p>
-                <img src="images/cake3.png" alt="бялуу">
-                <br>
-                <button class="btn-eat">идье +</button>
+                <p class="cart-item-totalprice">60000</p>
+                <i class="material-icons" style="font-size:36px; color: var(--green);">delete</i>
             </div>
-            <div class="cake-recommendation">
-                <h4 class="cake-recommendation-title">Fresh delicious cake</h4>
-                <div class="cart-item-star-kk">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+          
+            
+            <div class="cart-item ">
+                <img class="cart-item-img" src="../images/cake4.png" alt="byluunii zurag2">
+                <div>
+                     <p class="cart-item-name">Fresh delicious cake</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>calor</p>
                 </div>
-                <p class="cake-recommendation-calorie">калори: 500</p>
-                <img src="images/cake3.png" alt="бялуу">
-                <br>
-                <button class="btn-eat">идье +</button>
-            </div>
-            <div class="cake-recommendation">
-                <h4 class="cake-recommendation-title">Fresh delicious cake</h4>
-                <div class="cart-item-star-kk">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                <p class="cart-item-perprice">30000</p>
+                <div class="cart-item-button-container">
+                
+                    <button class="cart-btn-k">-</button>
+                    <button class="cart-btn-kk">0</button>
+                    <button class="cart-btn-kkk">+</button>
                 </div>
-                <p class="cake-recommendation-calorie">калори: 500</p>
-                <img src="images/cake4.png" alt="бялуу">
-                <br>
-                <button class="btn-eat">идье +</button>
+                <p class="cart-item-totalprice">60000</p>
+                <i class="material-icons" style="font-size:36px; color: var(--green);">delete</i>
             </div>
+            <div class="cart-item ">
+                <img class="cart-item-img" src="../images/cake4.png" alt="byluunii zurag3">
+                <div>
+                     <p class="cart-item-name">Fresh delicious cake</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>calor</p>
+                </div>
+                <p class="cart-item-perprice">30000</p>
+                <div class="cart-item-button-container">
+                
+                    <button class="cart-btn-k">-</button>
+                    <button class="cart-btn-kk">0</button>
+                    <button class="cart-btn-kkk">+</button>
+                </div>
+                <p class="cart-item-totalprice">60000</p>
+                
+                <i class="material-icons" style="font-size:36px; color: var(--green);">delete</i>
+            </div>
+    
         </section>
-    </main>
-    <aside>
         
-    </aside>
+        <aside class="cart-calculator">
+            <div class="cart-calculator-container">
+                <p class="tailbar">нийт үнэ</p>
+                <p class="une">80000</p>
+            </div>
+            <div class="cart-calculator-container">
+                <p class="tailbar">хүргэлтийн үнэ</p>
+                <p class="une">5000</p>
+            </div>
+            <hr>
+            <div class="cart-calculator-container">
+                <p class="tailbar">нийт</p>
+                <p class="une">85000</p>
+            </div>
+            <button class="cart-addbtn">
+                Худалдаж авах
+            </button>
+        </aside>
+    </section>
+    <h2 class="recommendation">Санал болгох Бүтээгдэхүүн</h2>
+    <section class="special-cake-container">
+        <div class="cake-card">
+          <h4 class="cake-card-title">Fresh delicious cake</h4>
+          <div class="card-item-star-kk">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="cake-card-calorie">калори: 500</p>
+          <br>
+          <img src="/images/cake4.png" alt="бялуу">
+          <button class="cake-btn-eat">идье +</button>
+        </div>
+        <div class="cake-card">
+          <h4 class="cake-card-title">Fresh delicious cake</h4>
+          <div class="card-item-star-kk">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="cake-card-calorie">калори: 500</p>
+          <br>
+          <img src="/images/cake4.png" alt="бялуу">
+          <button class="cake-btn-eat">идье +</button>
+        </div>
+        <div class="cake-card">
+          <h4 class="cake-card-title">Fresh delicious cake</h4>
+          <div class="card-item-star-kk">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="cake-card-calorie">калори: 500</p>
+          <br>
+          <img src="/images/cake4.png" alt="бялуу">
+          <button class="cake-btn-eat">идье +</button>
+        </div>
+        <div class="cake-card">
+          <h4 class="cake-card-title">Fresh delicious cake</h4>
+          <div class="card-item-star-kk">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="cake-card-calorie">калори: 500</p>
+          <br>
+          <img src="/images/cake4.png" alt="бялуу">
+          <button class="cake-btn-eat">идье +</button>
+        </div>
+        <div class="cake-card">
+          <h4 class="cake-card-title">Fresh delicious cake</h4>
+          <div class="card-item-star-kk">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="cake-card-calorie">калори: 500</p>
+          <br>
+          <img src="/images/cake4.png" alt="бялуу">
+          <button class="cake-btn-eat">идье +</button>
+        </div>
+        <div class="cake-card">
+          <h4 class="cake-card-title">Fresh delicious cake</h4>
+          <div class="card-item-star-kk">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="cake-card-calorie">калори: 500</p>
+          <br>
+          <img src="/images/cake4.png" alt="бялуу">
+          <button class="cake-btn-eat">идье +</button>
+        </div>
+        <div class="cake-card">
+          <h4 class="cake-card-title">Fresh delicious cake</h4>
+          <div class="card-item-star-kk">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="cake-card-calorie">калори: 500</p>
+          <br>
+          <img src="/images/cake4.png" alt="бялуу">
+          <button class="cake-btn-eat">идье +</button>
+        </div>
+        <div class="cake-card">
+          <h4 class="cake-card-title">Fresh delicious cake</h4>
+          <div class="card-item-star-kk">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="cake-card-calorie">калори: 500</p>
+          <br>
+          <img src="/images/cake4.png" alt="бялуу">
+          <button class="cake-btn-eat">идье +</button>
+        </div>
+
+      </section>
+  
+    </main>
+    
     <footer class="footer">
         <div class="footer-item-1">
             <img src="/images/removedBg-logo.png" alt="">

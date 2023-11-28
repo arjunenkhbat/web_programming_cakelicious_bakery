@@ -13,8 +13,8 @@ body{
         height: 1rem;
     }
     & main{
-        margin-left: 2rem;
-        margin-top: 2rem;
+       margin: auto;
+       width: 85%;
         & h{
             font-weight: bold;
             margin-left: 2rem;

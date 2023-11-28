@@ -1,0 +1,22 @@
+.special-showcase{
+    display: flex;
+    flex-direction: column;
+    background: url('../images_for_zorigoo/iStock-1192522394.jpg')  center center/cover;
+    margin: 3% 0;
+    color: azure;
+    height: 500px;
+    padding: 20px;
+    
+}
+.special-showcase-title{
+    display:flex;
+    flex-direction: row;
+    justify-content: end;
+    font-size: var(--desktop-text-medium);
+}
+.special-cake-container{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin: 5rem 0;
+}
