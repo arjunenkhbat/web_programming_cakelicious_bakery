@@ -36,7 +36,14 @@
  nav a{
   text-decoration: none;
 }
- nav ul {
+
+
+
+nav a:hover{
+  color: gray;
+}
+nav ul {
+
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -198,6 +205,9 @@ top: -10px;
 
 .check:checked ~.header-menu{
   visibility: visible;
+}
+.check:checked ~.header-menu>div{
+  transform: scale(1);
 }
 
 .header-menu{
