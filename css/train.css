@@ -25,19 +25,22 @@ body{
             display: flex;
             flex-flow: row wrap;
             & article{
-                background-image: url('back.jpg');
+                background-image: url('../photos/back.jpg');
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
                 background-position: center center;
                 border-radius: 2rem; 
-                width: 20%;
+                width: 100%;
+               
                 & ul{
                     list-style: none;
+                    margin: 1rem;
                     & .a1{
                         margin-left: 40%;
                         font-weight: bold;
-                        font-size: 1.4rem;
+                        font-size: 1.3rem;
                         color: var(--color-h);
+                        
                     }
                     & li{
                         & .train{
@@ -54,22 +57,27 @@ body{
                     font-size: 2rem;
                     color: var(--color-h);
                     margin-left: 20%;
+                    margin-top: 10%;
                 }
                 & .orts{
                     font-size: 1rem;
                 }
                 & hr{
                     width: 80%;
+                    margin-left: 10%;
                 }
             }
             & .art{
                 width: 60%;
                 background-image: none;
+                margin-top: 8%;
             }
             & .art1{
                 width: 35%;
+                margin-top: 8%;
                 & ul{
-                    margin-left: 2rem;
+                    margin-left: 5rem;
+                    margin-bottom: 2rem;
                     width: 75%;
                     list-style:circle;
                     & li{
@@ -83,7 +91,7 @@ body{
             & article{
                 text-align: center;
                 margin: 2.5rem;
-                width: 13%;
+                width: 18%;
                 & h{
                     height: 5rem;
                     margin-left: 0rem;
@@ -91,10 +99,16 @@ body{
                     color: var(--color-black);
                 }
                 & img{
-                    margin-left: 0rem;
+                    margin-left: 1rem;
+                    margin-top: 1rem;
                     width: 90%;
                     height: 90%;
                     border-radius: 5rem;
+                    cursor: pointer;
+                    transition: all 150ms ease-in-out 0s;
+                }
+                & img:hover{
+                    transform: scale(1.3);
                 }
                 & ul{
                     margin-top: 3rem;
@@ -102,15 +116,21 @@ body{
                 }
             }
             & button{
-                width: 8rem;
-                height: 2rem;
-                border-radius: 2rem;
-                border: 0px ;
-                font-size: 1.4rem;
-                float: right;
-                font-weight: bold;
-                background-color: var(--color-pink);
-                color: var(--color-white);
+                background-color: #f4a395;
+                border: none;
+                border-radius: 0.75rem;
+                padding: 0.25rem;
+                color: #fff;
+                transform: translateX(5rem) translateY(1rem);
+                font-size:1rem;
+                cursor: pointer;
+                transition: all 150ms ease-in-out 0s;
+            }
+                & button:hover{
+                    background-color: var(--green);
+                    border: 1px solid var(--green);
+                    box-shadow: rgb(0 0 0 / 30%) 0px 4px 4px, rgb(231 238 236) 0px 0px 0px 3px;
+                  }
                 & img{
                     border-radius: 2rem;
                     width: 25%;
@@ -120,4 +140,3 @@ body{
             }
         }
     }
-}
