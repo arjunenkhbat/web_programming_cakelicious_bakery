@@ -202,7 +202,7 @@ top: -10px;
 }
 
 .check:checked ~.header-menu{
-  visibility: visible;
+  left: 0;
 }
 .check:checked ~.header-menu>div{
   transform: scale(1);
