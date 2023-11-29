@@ -87,6 +87,11 @@ hr.cakey-sidebar{
   text-align: center;
   font-size: var(--desktop-text-small);
   padding-top: 0.5rem;
+  cursor: pointer;
+  transition: all 150ms ease-in-out 0s;
+}
+.cake-sidebar ul li:hover{
+  color: #61868C;
 }
 .cake-sidebar ul{
   margin-top: 3rem;

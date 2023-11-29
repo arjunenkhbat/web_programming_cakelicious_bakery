@@ -1,7 +1,7 @@
 
 
 
-/* Khulan bichsin*/
+
 .cake-total{
     
     display: flex;
@@ -43,7 +43,17 @@
     padding: 1rem 0.7rem;
     display: flex;
     justify-content: space-between;
+    border-color: #7CA27E;
+    cursor: pointer;
+    transition: all 150ms ease-in-out 0s;
+
 }
+.cart-btn:hover{
+
+    background-color: var(--pink);
+    border: 1px solid var(--pink);
+    box-shadow: rgb(0 0 0 / 30%) 0px 4px 4px, rgb(231 238 236) 0px 0px 0px 3px;
+  }
 .cart-btn p{
     margin-left: 5px;
 }
@@ -103,7 +113,11 @@
     color: #fff;
     padding: 0.5rem 0.5rem;
     margin: 0;
+   
+    cursor: pointer;
+    transition: all 150ms ease-in-out 0s;
 }
+
 
 .cart-btn-kk{
     width: 2rem;
@@ -112,8 +126,10 @@
     background-color: #7CA27E;
     color: #fff;
     padding: 0.5rem 0.5rem;
-    
+    cursor: pointer;
+    transition: all 160ms ease-in-out 1ms;
 }
+
 .cart-btn-kkk{
    
     width: 2rem;
@@ -122,6 +138,8 @@
     background-color: #7CA27E;
     color: #fff;
     padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    transition: all 150ms ease-in-out 0s;
 }
 
 .cart-item-perprice, 
@@ -129,10 +147,19 @@
     font-size: 1.25rem;
 }
 
-.fa-trash{
-    color: #7CA27E;
-    font-size: 1.25rem;
+
+.material-icons{
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 150ms ease-in-out 0s;
 }
+.material-icons:hover{
+    
+  
+    box-shadow: rgb(0 0 0 / 30%) 0px 4px 4px, rgb(231 238 236) 0px 0px 0px 3px;
+}
+
 
 .cart-calculator{
     background-color: #fff;
@@ -163,7 +190,15 @@
     padding: 0.5rem 1.5rem;
     width: 100%;
     margin: 2rem 0 1rem 0;
+    cursor: pointer;
+    transition: all 150ms ease-in-out 0s;
 }
+.cart-addbtn:hover{
+
+    background-color: var(--pink);
+    border: 1px solid var(--pink);
+    box-shadow: rgb(0 0 0 / 30%) 0px 4px 4px, rgb(231 238 236) 0px 0px 0px 3px;
+  }
 
 .recommendation-container{
     display: flex;

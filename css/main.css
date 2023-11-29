@@ -113,8 +113,15 @@ margin: 100px 30px;
     padding: 10px 20px;
     color: #fff;
     border-color: #7CA27E;
-    
+    cursor: pointer;
+    transition: all 150ms ease-in-out 0s;
 }
+.btn:hover{
+
+    background-color: var(--pink);
+    border: 1px solid var(--green);
+    box-shadow: rgb(0 0 0 / 30%) 0px 4px 4px, rgb(231 238 236) 0px 0px 0px 3px;
+  }
                                
 
                             
