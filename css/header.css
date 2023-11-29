@@ -36,7 +36,11 @@
  nav a{
   text-decoration: none;
 }
- nav ul {
+
+nav a:hover{
+  color: gray;
+}
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
