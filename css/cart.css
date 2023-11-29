@@ -28,6 +28,15 @@
     height: 2rem;
     margin-right: 1rem;
 }
+.fa-arrow-alt-circle-left{
+    border: none;
+    cursor: pointer;
+    transition: all 150ms ease-in-out 0s;
+    background-color: var(--background);
+}
+.fa-arrow-alt-circle-left:hover{
+    box-shadow: rgb(0 0 0 / 30%) 0px 4px 4px, rgb(231 238 236) 0px 0px 0px 3px;
+}
 
 .cart-header-title{
     margin-right: auto;

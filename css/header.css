@@ -16,10 +16,15 @@
  text-decoration: none;
  font-size: var(--desktop-text-mid);
  padding-left: 2rem;
+ text-align: center;
+ cursor: pointer;
+  transition: all 150ms ease-in-out 0s;
 }
-.header-item-1{
-  margin-top: 30px;
+.cake-header a:hover{
+  color: var(--saaral);
 }
+
+
 .header-item-2 img{
   width: 100%;
   height: auto;
@@ -27,7 +32,6 @@
   
 
 .header-item-3{
-  margin-top: 30px;
   margin-left: auto;
   margin-right: 5%;
 }
