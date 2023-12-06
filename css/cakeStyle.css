@@ -123,9 +123,9 @@ hr.cakey-sidebar{
 }
 
 .card-item-star-kk{
-  color: yellow;
-  margin: 0rem;
+  color: pink;
 }
+
 
 .cake-card-calorie{
   opacity: 30%;
@@ -190,10 +190,11 @@ br{
 }
 
 .card1-item-star-kk{
-  color: yellow;
+  color: pink;
   margin: 0rem;
   margin-bottom: 1rem;
   text-align: center;
+
 }
 
 .cake-card1-calorie{
@@ -216,7 +217,7 @@ br{
 .cake1-btn-eat:hover{
 
   background-color: var(--green);
-  border: 1px solid var(--green);
+  border: 1px solid white;
   box-shadow: rgb(0 0 0 / 30%) 0px 4px 4px, rgb(231 238 236) 0px 0px 0px 3px;
 }
 .cake-card1 img{
@@ -251,7 +252,7 @@ br{
 }
 
 .card2-item-star-kk{
-  color: yellow;
+  color: pink;
   margin-left: 0.5rem;
 }
 

@@ -21,7 +21,7 @@
   transition: all 150ms ease-in-out 0s;
 }
 .cake-header a:hover{
-  color: var(--saaral);
+  color: gray;
 }
 
 
@@ -66,7 +66,7 @@ nav ul {
   text-decoration: none;
 }
  nav li a:hover {
-  background-color: #7CA27E;
+  color: var(--saaral);
 }
 
 .main{

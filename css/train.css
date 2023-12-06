@@ -101,9 +101,10 @@ body{
                 & img{
                     margin-left: 1rem;
                     margin-top: 1rem;
-                    width: 90%;
-                    height: 90%;
+                    
                     border-radius: 5rem;
+                    width: 10rem;
+                    height: 11rem;
                     cursor: pointer;
                     transition: all 150ms ease-in-out 0s;
                 }

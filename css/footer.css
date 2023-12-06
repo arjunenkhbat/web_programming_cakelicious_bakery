@@ -43,6 +43,9 @@ footer-item-1{
     line-height: 2em;
     padding: 10px;
 }
+.footer-menu li a:hover{
+    color:var(--saaral);
+}
 .footer-contact{
     list-style: none;
 
@@ -54,6 +57,9 @@ footer-item-1{
     line-height: 2em;
     padding: 10px ;
 }
+.footer-contact li a:hover{
+    color:var(--saaral);
+}
 .footer-wrapper{
    padding: 10px;
   margin-left: 0;
@@ -61,4 +67,8 @@ footer-item-1{
 .footer-wrapper a {
     color: white;
     padding: 10px;
+    text-decoration: none;
+}
+.footer-wrapper a:hover{
+    color:var(--saaral);
 }

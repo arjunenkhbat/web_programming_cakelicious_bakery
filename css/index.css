@@ -9,13 +9,14 @@
 
                                 /*main heseg*/
 
-
+                                /*../images_for_zorigoo/iStock-844714534.jpg*/
 .main-showcase{
     background: url('../images_for_zorigoo/iStock-844714534.jpg') center center/cover;
     height: 450px;
     background-color: #fff;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
+    
 }
 
 .main-branchCake{
@@ -61,7 +62,7 @@
     height: 300px;
     background: url('../images_for_zorigoo/iStock-1126488287.jpg') center center/cover;
     border-radius: 0.5rem;
-
+    
 }
 
 .advertise{
@@ -88,7 +89,7 @@ border-radius: 0.5rem;
     text-align: center;
     justify-content: center;
     border-radius: 0.5rem;
-  
+    filter: brightness(90%);
 }
 
 .advertising-home p{
@@ -112,6 +113,7 @@ border-radius: 0.5rem;
 .btn{
    
     margin: 10px auto;
+    text-decoration: none;
     background-color: #7CA27E;
     border-radius: 5px;
     padding: 10px 20px;
