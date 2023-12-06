@@ -13,7 +13,120 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700&family=Roboto:wght@100;300;900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700&family=Roboto:wght@100;300;900&display=swap">
+  <script>
+    class Cake {
+      constructor() {
+      }
+      List() {
+        const cak = [
+          {
+            id: 1,
+            name: "FRESH DELICIOUS CAKE",
+            calories: 500,
+            img: "../images/cake4.png",
+
+            rt: 5.0,
+          },
+          {
+            name: "FRESH DELICIOUS CAKE",
+            calories: 500,
+            img: "../images/cake7.png",
+            rt: 5.0,
+          },
+          {
+            name: "FRESH DELICIOUS CAKE",
+            calories: 500,
+            img: "../images/cake8.png",
+            rt: 5.0,
+          },
+          {
+            name: "FRESH DELICIOUS CAKE",
+            calories: 500,
+            img: "../images/cake4.png",
+            rt: 5.0,
+          },
+          {
+            name: "FRESH DELICIOUS CAKE",
+            calories: 500,
+            img: "../images/cake-cake1.png",
+            rt: 5.0,
+          },
+          {
+            name: "FRESH DELICIOUS CAKE",
+            calories: 500,
+            img: "../images/cake-cake1.png",
+            rt: 5.0,
+          },
+          {
+            name: "FRESH DELICIOUS CAKE",
+            calories: 500,
+            img: "../images/cake-cake1.png",
+            rt: 5.0,
+          },
+          {
+            name: "FRESH DELICIOUS CAKE",
+            calories: 500,
+            img: "../images/cake-cake1.png",
+            rt: 5.0,
+          },
+          {
+            name: "FRESH DELICIOUS CAKE",
+            calories: 500,
+            img: "../photos/cake1.jpg",
+            rt: 5.0,
+          },
+          {
+            name: "FRESH DELICIOUS CAKE",
+            calories: 500,
+            img: "../photos/cake1.jpg",
+            rt: 5.0,
+          },
+        ];
+        const p = cak;
+        let data = '<section>';
+        for (const product of p) {
+          const prod = new Product(product);
+          data += prod.Render();
+        }
+        data += "</section>";
+
+        document.getElementById("app").insertAdjacentHTML("beforeend", data);
+      }
+    }
+    class Product {
+      constructor(product) {
+        this.id = product.id;
+        this.name = product.name;
+        this.img = product.img;
+        this.calories = product.calories;
+        this.rt = product.rt;
+      }
+
+      Render() {
+        return `
+      <article>
+          <ul>
+              <li><h>${this.name}</h></li>
+              <li>Үнэлгээ:${this.rt}</li>
+              <li>Калори:${this.calories}</li>
+              <hr>
+              <li><img src="${this.img}" alt="cake_image"></li>
+              <li><button id="button" onclick="CartCounter(this.id)"> Идье +</button></li>
+          </ul>
+      </article>`
+      }
+    }
+
+    
+    function CartCounter() {
+      const count = document.getElementById("cartCount");
+      var c = parseInt(count.textContent);
+      c++;
+      count.textContent = c;
+    }
+
+  </script>
 </head>
 
 <body>
@@ -37,23 +150,23 @@
         </div>
       </div>
 
-<div class="header-item-2">
-  <a href="main.html">
-      <img src="/images/removedBg-logo.png" alt="">
-  </a>
-</div>
+      <div class="header-item-2">
+        <a href="main.html">
+          <img src="/images/removedBg-logo.png" alt="">
+        </a>
+      </div>
 
 
       <div class="header-item-3">
         <div class="icon_cart_globe">
-          <a href="#" class="icon cart">
-            <span><i class="fa fa-shopping-cart"></i></span>
-          </a>
-          <a href="#" class="icon globe">
-            <span><i class="fas fa-globe"></i></span>
-          </a>
-        </div>
+        <a href="#" class="icon cart" id="cart-icon">
+          <span id="cartCount">0</span><i class="fa fa-shopping-cart"></i>
+        </a>
+        <a href="#" class="icon globe">
+          <span><i class="fas fa-globe"></i></span>
+        </a>
       </div>
+    </div>
     </div>
   </header>
   <nav>
@@ -73,433 +186,99 @@
     </div>
 
 
-<!------------------------cake card heseg------------------------------------------------------>
-<div class="cake-heseg-container1">
-  <section class="cake-sidebar">
-      <ul>
-        <li>Бялуу</li>
-        <hr class="cakey-sidebar">
-        <li>Бүгд</li>
-        <li>Сүүн кремтэй бялуу</li>
-        <li>Мусс бялуу</li>
-        <li>Маслон кремтэй бялуу</li>
-        <li>Шинэ жилийн бялуу</li>
-      </ul>
-  </section>
-  <!------------------------cake card1 heseg------------ ----->
-  <div class="cake-card1">
-    <h4 class="cake-card1-title">Fresh delicious cake</h4>
-    <div class="card1-item-star-kk">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-    </div>
-    <p class="cake-card1-calorie">калори: 500</p>
-    <img src="/images/cake1.png" alt="бялуу">
-    <button class="cake1-btn-eat">идье +</button>
-</div>
-<!------------------------cake card2 heseg------------ ----->
-<div class="cake-card2">
-  <h4 class="cake-card2-title">Fresh delicious cake</h4>
-  <div class="card2-item-star-kk">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-  </div>
-  <p class="cake-card2-calorie">калори: 500</p>
-  <br>
-  <img src="/images/cake4.png" alt="бялуу">
-  <button class="cake2-btn-eat">идье +</button>
-</div>
+    <!------------------------cake card heseg------------------------------------------------------>
+    <div class="cake-heseg-container1">
+      <section class="cake-sidebar">
+        <ul>
+          <li>Бялуу</li>
+          <hr class="cakey-sidebar">
+          <li>Бүгд</li>
+          <li>Сүүн кремтэй бялуу</li>
+          <li>Мусс бялуу</li>
+          <li>Маслон кремтэй бялуу</li>
+          <li>Шинэ жилийн бялуу</li>
+        </ul>
+      </section>
+      <!------------------------cake card1 heseg------------ ----->
+      <div class="cake-card1">
+        <h4 class="cake-card1-title">Fresh delicious cake</h4>
+        <div class="card1-item-star-kk">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="cake-card1-calorie">калори: 500</p>
+        <img src="/images/cake1.png" alt="бялуу">
+        <button class="cake1-btn-eat">идье +</button>
+      </div>
+      <!------------------------cake card2 heseg------------ ----->
+      <div class="cake-card2">
+        <h4 class="cake-card2-title">Fresh delicious cake</h4>
+        <div class="card2-item-star-kk">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="cake-card2-calorie">калори: 500</p>
+        <br>
+        <img src="/images/cake4.png" alt="бялуу">
+        <button class="cake2-btn-eat">идье +</button>
+      </div>
 
-<div class="cake-card2">
-  <h4 class="cake-card2-title">Fresh delicious cake</h4>
-  <div class="card2-item-star-kk">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
+      <div class="cake-card2">
+        <h4 class="cake-card2-title">Fresh delicious cake</h4>
+        <div class="card2-item-star-kk">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="cake-card2-calorie">калори: 500</p>
+        <br>
+        <img src="/images/cake7.png" alt="бялуу">
+        <button class="cake2-btn-eat">идье +</button>
+      </div>
+      <div class="cake-card2">
+        <h4 class="cake-card2-title">Fresh delicious cake</h4>
+        <div class="card2-item-star-kk">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="cake-card2-calorie">калори: 500</p>
+        <br>
+        <img src="/images/cake2.png" alt="бялуу">
+        <button class="cake2-btn-eat">идье +</button>
+      </div>
+      <div class="cake-card2">
+        <h4 class="cake-card2-title">Fresh delicious cake</h4>
+        <div class="card2-item-star-kk">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="cake-card2-calorie">калори: 500</p>
+        <br>
+        <img src="/images/cake3.png" alt="бялуу">
+        <button class="cake2-btn-eat">идье +</button>
+      </div>
+    </div>
+    <h4></h4>
+    <section class="cake-heseg-container2" id="app">
+
+    </section>
   </div>
-  <p class="cake-card2-calorie">калори: 500</p>
-  <br>
-  <img src="/images/cake7.png" alt="бялуу">
-  <button class="cake2-btn-eat">идье +</button>
-</div>
-<div class="cake-card2">
-  <h4 class="cake-card2-title">Fresh delicious cake</h4>
-  <div class="card2-item-star-kk">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
   </div>
-  <p class="cake-card2-calorie">калори: 500</p>
-  <br>
-  <img src="/images/cake2.png" alt="бялуу">
-  <button class="cake2-btn-eat">идье +</button>
-</div>
-<div class="cake-card2">
-  <h4 class="cake-card2-title">Fresh delicious cake</h4>
-  <div class="card2-item-star-kk">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
   </div>
-  <p class="cake-card2-calorie">калори: 500</p>
-  <br>
-  <img src="/images/cake3.png" alt="бялуу">
-  <button class="cake2-btn-eat">идье +</button>
-</div>
-</div>
-<section class="cake-heseg-container2">
-<div class="cake-card">
-  <h4 class="cake-card-title">Fresh delicious cake</h4>
-  <div class="card-item-star-kk">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-  </div>
-  <p class="cake-card-calorie">калори: 500</p>
-  <br>
-  <img src="/images/cake4.png" alt="бялуу">
-  <button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-  <h4 class="cake-card-title">Fresh delicious cake</h4>
-  <div class="card-item-star-kk">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-  </div>
-  <p class="cake-card-calorie">калори: 500</p>
-  <br>
-  <img src="/images/cake3.png" alt="бялуу">
-  <button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-  <h4 class="cake-card-title">Fresh delicious cake</h4>
-  <div class="card-item-star-kk">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-  </div>
-  <p class="cake-card-calorie">калори: 500</p>
-  <br>
-  <img src="/images/cake7.png" alt="бялуу">
-  <button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-  <h4 class="cake-card-title">Fresh delicious cake</h4>
-  <div class="card-item-star-kk">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-  </div>
-  <p class="cake-card-calorie">калори: 500</p>
-  <br>
-  <img src="/images/cake4.png" alt="бялуу">
-  <button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-  <h4 class="cake-card-title">Fresh delicious cake</h4>
-  <div class="card-item-star-kk">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-  </div>
-  <p class="cake-card-calorie">калори: 500</p>
-  <br>
-  <img src="/images/cake2.png" alt="бялуу">
-  <button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-  <h4 class="cake-card-title">Fresh delicious cake</h4>
-  <div class="card-item-star-kk">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-  </div>
-  <p class="cake-card-calorie">калори: 500</p>
-  <br>
-  <img src="/images/cake4.png" alt="бялуу">
-  <button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-  <h4 class="cake-card-title">Fresh delicious cake</h4>
-  <div class="card-item-star-kk">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-  </div>
-  <p class="cake-card-calorie">калори: 500</p>
-  <br>
-  <img src="/images/cake5.png" alt="бялуу">
-  <button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-  <h4 class="cake-card-title">Fresh delicious cake</h4>
-  <div class="card-item-star-kk">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-  </div>
-  <p class="cake-card-calorie">калори: 500</p>
-  <br>
-  <img src="/images/cake7.png" alt="бялуу">
-  <button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-  <h4 class="cake-card-title">Fresh delicious cake</h4>
-  <div class="card-item-star-kk">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-  </div>
-  <p class="cake-card-calorie">калори: 500</p>
-  <br>
-  <img src="/images/cake3.png" alt="бялуу">
-  <button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-  <h4 class="cake-card-title">Fresh delicious cake</h4>
-  <div class="card-item-star-kk">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-  </div>
-  <p class="cake-card-calorie">калори: 500</p>
-  <br>
-  <img src="/images/cake4.png" alt="бялуу">
-  <button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-<h4 class="cake-card-title">Fresh delicious cake</h4>
-<div class="card-item-star-kk">
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-</div>
-<p class="cake-card-calorie">калори: 500</p>
-<br>
-<img src="/images/cake4.png" alt="бялуу">
-<button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-<h4 class="cake-card-title">Fresh delicious cake</h4>
-<div class="card-item-star-kk">
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-</div>
-<p class="cake-card-calorie">калори: 500</p>
-<br>
-<img src="/images/cake4.png" alt="бялуу">
-<button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-<h4 class="cake-card-title">Fresh delicious cake</h4>
-<div class="card-item-star-kk">
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-</div>
-<p class="cake-card-calorie">калори: 500</p>
-<br>
-<img src="/images/cake3.png" alt="бялуу">
-<button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-<h4 class="cake-card-title">Fresh delicious cake</h4>
-<div class="card-item-star-kk">
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-</div>
-<p class="cake-card-calorie">калори: 500</p>
-<br>
-<img src="/images/cake-cake2.png" alt="бялуу">
-<button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-<h4 class="cake-card-title">Fresh delicious cake</h4>
-<div class="card-item-star-kk">
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-</div>
-<p class="cake-card-calorie">калори: 500</p>
-<br>
-<img src="/images/cake4.png" alt="бялуу">
-<button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-<h4 class="cake-card-title">Fresh delicious cake</h4>
-<div class="card-item-star-kk">
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-</div>
-<p class="cake-card-calorie">калори: 500</p>
-<br>
-<img src="/images/cake4.png" alt="бялуу">
-<button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-<h4 class="cake-card-title">Fresh delicious cake</h4>
-<div class="card-item-star-kk">
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-</div>
-<p class="cake-card-calorie">калори: 500</p>
-<br>
-<img src="/images/cake4.png" alt="бялуу">
-<button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-<h4 class="cake-card-title">Fresh delicious cake</h4>
-<div class="card-item-star-kk">
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-</div>
-<p class="cake-card-calorie">калори: 500</p>
-<br>
-<img src="/images/cake4.png" alt="бялуу">
-<button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-<h4 class="cake-card-title">Fresh delicious cake</h4>
-<div class="card-item-star-kk">
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-</div>
-<p class="cake-card-calorie">калори: 500</p>
-<br>
-<img src="/images/cake4.png" alt="бялуу">
-<button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-<h4 class="cake-card-title">Fresh delicious cake</h4>
-<div class="card-item-star-kk">
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-</div>
-<p class="cake-card-calorie">калори: 500</p>
-<br>
-<img src="/images/cake-cake2.png" alt="бялуу">
-<button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-<h4 class="cake-card-title">Fresh delicious cake</h4>
-<div class="card-item-star-kk">
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-</div>
-<p class="cake-card-calorie">калори: 500</p>
-<br>
-<img src="/images/cake3.png" alt="бялуу">
-<button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-<h4 class="cake-card-title">Fresh delicious cake</h4>
-<div class="card-item-star-kk">
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-</div>
-<p class="cake-card-calorie">калори: 500</p>
-<br>
-<img src="/images/cake-cake3.png" alt="бялуу">
-<button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-<h4 class="cake-card-title">Fresh delicious cake</h4>
-<div class="card-item-star-kk">
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-</div>
-<p class="cake-card-calorie">калори: 500</p>
-<br>
-<img src="/images/cake-cake2.png" alt="бялуу">
-<button class="cake-btn-eat">идье +</button>
-</div>
-<div class="cake-card">
-  <h4 class="cake-card-title">Fresh delicious cake</h4>
-  <div class="card-item-star-kk">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-  </div>
-  <p class="cake-card-calorie">калори: 500</p>
-  <br>
-  <img src="/images/cake1.png" alt="бялуу">
-  <button class="cake-btn-eat">идье +</button>
-  </div>
-</section>
-</div>
-</div>    
-</div>
 
   <!------------------------footer heseg------------ ----->
 
