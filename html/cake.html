@@ -29,6 +29,7 @@
             rt: 5.0,
           },
           {
+            id: 2,
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake7.png",
@@ -159,7 +160,7 @@
 
       <div class="header-item-3">
         <div class="icon_cart_globe">
-        <a href="#" class="icon cart" id="cart-icon">
+        <a href="cart.html" class="icon cart" id="cart-icon">
           <span id="cartCount">0</span><i class="fa fa-shopping-cart"></i>
         </a>
         <a href="#" class="icon globe">
@@ -275,7 +276,7 @@
     <h4></h4>
        <!------------------------ cake list ---------------------->
     <section class="cake-heseg-container2" id="app">
-
+      <cake-component></cake-component>
     </section>
   </div>
   </div>
@@ -319,16 +320,18 @@
   </footer>
   <script>
 
-    const cakeInstance = new Cake();
-    cakeInstance.List();
-    const cartIcon = document.getElementById("cart-icon");
-    const button = document.getElementById("button");
-    button.addEventListener('click', CartCounter);
+    // const cakeInstance = new Cake();
+    // cakeInstance.List();
+    // const cartIcon = document.getElementById("cart-icon");
+    // const button = document.getElementById("button");
+    // button.addEventListener('click', CartCounter);
 
    
 
 
   </script>
+ <script type="module" src="../cake-component.js"></script>
+
 </body>
 
 </html>
