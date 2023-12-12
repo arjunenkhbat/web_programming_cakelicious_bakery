@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined:opsz,wght@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script type="module" src="../cake-component.js"></script>
   </head>
 <body>
     <header class="cake-header">
@@ -74,8 +75,9 @@
     <section class="cake-total">
 
 
-        <section class="cart-item-container">
-            <div class="cart-item">
+        <section class="cart-item-container" id="cart-item-container">
+            <cake-component></cake-component>
+            <!-- <div class="cart-item">
                 <img class="cart-item-img" src="../images/cake1.png" alt="byluunii zurag1" >
                
                 <div >
@@ -141,7 +143,7 @@
                 <p class="cart-item-totalprice">60000</p>
                 
                 <i class="material-icons" style="font-size:36px; color: var(--green);">delete</i>
-            </div>
+            </div> -->
     
         </section>
         
@@ -236,6 +238,7 @@
           <img src="/images/cake4.png" alt="бялуу">
           <button class="cake-btn-eat">идье +</button>
         </div>
+
         <div class="cake-card">
           <h4 class="cake-card-title">Fresh delicious cake</h4>
           <div class="card-item-star-kk">
@@ -250,6 +253,7 @@
           <img src="/images/cake4.png" alt="бялуу">
           <button class="cake-btn-eat">идье +</button>
         </div>
+
         <div class="cake-card">
           <h4 class="cake-card-title">Fresh delicious cake</h4>
           <div class="card-item-star-kk">
