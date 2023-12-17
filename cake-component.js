@@ -25,6 +25,7 @@ class CakeComponent extends HTMLElement {
         cakeList.forEach(cake => {
             html += this.#renderOnCart(cake);
         });
+       
         cartContainer.innerHTML = html;
         
     }
