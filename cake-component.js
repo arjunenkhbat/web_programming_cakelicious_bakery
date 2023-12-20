@@ -99,3 +99,4 @@ class CakeComponent extends HTMLElement {
 }
 
 window.customElements.define('cake-component', CakeComponent);
+// js
