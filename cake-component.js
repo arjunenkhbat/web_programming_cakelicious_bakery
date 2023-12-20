@@ -6,8 +6,8 @@ console.log(cakeList);
 class CakeComponent extends HTMLElement {
     constructor() {
         super();
-        //this.#renderCakeList();
-        this.#renderCartItems();
+        this.#renderCakeList();
+        //this.#renderCartItems();
     }
 
     #renderCakeList(){
@@ -25,6 +25,7 @@ class CakeComponent extends HTMLElement {
         cakeList.forEach(cake => {
             html += this.#renderOnCart(cake);
         });
+       
         cartContainer.innerHTML = html;
         
     }

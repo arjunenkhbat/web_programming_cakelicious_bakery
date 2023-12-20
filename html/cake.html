@@ -15,8 +15,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700&family=Roboto:wght@100;300;900&display=swap">
   <script>
-    class Cake {
+     class Cake {
       constructor() {
+        
       }
       List() {
         const cak = [
@@ -25,59 +26,65 @@
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake4.png",
-
+  
             rt: 5.0,
           },
           {
-            id: 2,
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake7.png",
             rt: 5.0,
           },
           {
+            id:3,
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake8.png",
             rt: 5.0,
           },
           {
+            id:4,
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake4.png",
             rt: 5.0,
           },
           {
+            id:5,
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake-cake1.png",
             rt: 5.0,
           },
           {
+            id:6,
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake-cake1.png",
             rt: 5.0,
           },
           {
+            id:7,
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake-cake1.png",
             rt: 5.0,
           },
           {
+            id:8,
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake-cake1.png",
             rt: 5.0,
           },
           {
+            id:9,
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../photos/cake1.jpg",
             rt: 5.0,
           },
-          {
+          { id:10,
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../photos/cake1.jpg",
@@ -91,7 +98,7 @@
           data += prod.Render();
         }
         data += "</section>";
-
+  
         document.getElementById("app").insertAdjacentHTML("beforeend", data);
       }
     }
@@ -103,7 +110,7 @@
         this.calories = product.calories;
         this.rt = product.rt;
       }
-
+  
       Render() {
         return `
       <article>
@@ -117,8 +124,20 @@
           </ul>
       </article>`
       }
+      Bind(eventType, element, property) { 
+        
+        gebi(`${element}_${this.id}`).addEventListener(eventType, (event) => {
+            
+            //this[property] used to access the object's property.
+            //for example this["title"]
+            //event.target gets <h1> element in our example
+            this[property] = event.target.innerHTML;
+            console.log(`event:${event} this=${JSON.stringify(Cake)}`);
+        })
+        return this;
     }
-
+    }
+  
     
     function CartCounter() {
       const count = document.getElementById("cartCount");
@@ -126,7 +145,7 @@
       c++;
       count.textContent = c;
     }
-
+  
   </script>
 </head>
 
@@ -274,7 +293,7 @@
       </div>
     </div>
     <h4></h4>
-       <!------------------------ cake list ---------------------->
+       <!------------------------ cake list -->
     <section class="cake-heseg-container2" id="app">
       <cake-component></cake-component>
     </section>
