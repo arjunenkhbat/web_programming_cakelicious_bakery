@@ -15,9 +15,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700&family=Roboto:wght@100;300;900&display=swap">
   <script>
-     class Cake {
+    class Cake {
       constructor() {
-        
       }
       List() {
         const cak = [
@@ -26,65 +25,59 @@
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake4.png",
-  
+
             rt: 5.0,
           },
           {
+            id: 2,
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake7.png",
             rt: 5.0,
           },
           {
-            id:3,
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake8.png",
             rt: 5.0,
           },
           {
-            id:4,
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake4.png",
             rt: 5.0,
           },
           {
-            id:5,
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake-cake1.png",
             rt: 5.0,
           },
           {
-            id:6,
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake-cake1.png",
             rt: 5.0,
           },
           {
-            id:7,
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake-cake1.png",
             rt: 5.0,
           },
           {
-            id:8,
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake-cake1.png",
             rt: 5.0,
           },
           {
-            id:9,
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../photos/cake1.jpg",
             rt: 5.0,
           },
-          { id:10,
+          {
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../photos/cake1.jpg",
@@ -98,7 +91,7 @@
           data += prod.Render();
         }
         data += "</section>";
-  
+
         document.getElementById("app").insertAdjacentHTML("beforeend", data);
       }
     }
@@ -110,7 +103,7 @@
         this.calories = product.calories;
         this.rt = product.rt;
       }
-  
+
       Render() {
         return `
       <article>
@@ -124,20 +117,8 @@
           </ul>
       </article>`
       }
-      Bind(eventType, element, property) { 
-        
-        gebi(`${element}_${this.id}`).addEventListener(eventType, (event) => {
-            
-            //this[property] used to access the object's property.
-            //for example this["title"]
-            //event.target gets <h1> element in our example
-            this[property] = event.target.innerHTML;
-            console.log(`event:${event} this=${JSON.stringify(Cake)}`);
-        })
-        return this;
     }
-    }
-  
+
     
     function CartCounter() {
       const count = document.getElementById("cartCount");
@@ -145,7 +126,7 @@
       c++;
       count.textContent = c;
     }
-  
+
   </script>
 </head>
 
@@ -199,7 +180,7 @@
   </nav>
 
 
-  <!------------------------cake sidebar------------ ----->
+          <!------------------------cake sidebar------------ ----->
   <div class="container">
     <div class="cake-heseg">
       <h2>Бялуу захиалга</h2>
@@ -212,11 +193,10 @@
         <ul>
           <li>Бялуу</li>
           <hr class="cakey-sidebar">
-          <li>Бүгд</li>
-          <li>Сүүн кремтэй бялуу</li>
-          <li>Мусс бялуу</li>
-          <li>Маслон кремтэй бялуу</li>
-          <li>Шинэ жилийн бялуу</li>
+          <a href="?category=MilkyCream" id="milkycream-link" data-category="MilkyCream">Сүүн кремтэй бялуу</a>
+            <a href="?category=Mousse" id="mousse-link" data-category="Mousse">Мусс бялуу</a>
+            <a href="?category=Maslo" id="maslo-link" data-category="Maslo">Маслон кремтэй бялуу</a>
+            <a href="?category=NewYear" id="newyear-link" data-category="NewYear">Шинэ жилийн бялуу</a>
         </ul>
       </section>
       <!------------------------cake card1 heseg------------ ----->
@@ -293,7 +273,7 @@
       </div>
     </div>
     <h4></h4>
-       <!------------------------ cake list -->
+       <!------------------------ cake list ---------------------->
     <section class="cake-heseg-container2" id="app">
       <cake-component></cake-component>
     </section>

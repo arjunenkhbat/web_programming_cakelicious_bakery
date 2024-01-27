@@ -80,24 +80,26 @@ hr.cakey-sidebar{
   width: 80%;
   margin-left: 1rem;
 }
-.cake-sidebar ul li{
+
+
+.cake-sidebar a{
   text-decoration: none;
   list-style: none;
-  margin: 1.5rem;
+  margin: 4rem;
+  margin-top: 2rem;
   text-align: center;
   font-size: var(--desktop-text-small);
   padding-top: 0.5rem;
   cursor: pointer;
   transition: all 150ms ease-in-out 0s;
 }
-.cake-sidebar ul li:hover{
+.cake-sidebar a{
   color: #61868C;
 }
-.cake-sidebar ul{
-  margin-top: 3rem;
-  color: var(--white);
-}
-.cake-sidebar ul li:nth-child(1){
+
+.cake-sidebar ul li{
+  list-style: none;
+  margin: 1.5rem;
   font-weight: 600;
   font-size: var(--desktop-text-mid);
   margin-bottom: 1rem;
@@ -313,7 +315,7 @@ br{
   grid-template-columns: auto auto auto auto;
   & article{
     background-image: url('../photos/back.jpg');
-    background-size: 100% 100%;
+    background-size: 100% ;
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 2rem; 
@@ -368,7 +370,7 @@ br{
           width: 75%;
           list-style:circle;
           & li{
-              font-size: 1.5rem;
+              font-size: 1rem;
               color: var(--color-h);
           }
       }
@@ -377,7 +379,7 @@ br{
 & #app{
   & article{
       text-align: center;
-      margin: 2.5rem;
+      margin: 3rem;
       width: max-content;
       & h{
           height: 5rem;
@@ -409,7 +411,7 @@ br{
       border-radius: 0.75rem;
       padding: 0.25rem;
       color: #fff;
-      transform: translateX(5rem) translateY(1rem);
+      transform: translateX(7rem) translateY(2.5rem);
       font-size:1rem;
       cursor: pointer;
       transition: all 150ms ease-in-out 0s;

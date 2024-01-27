@@ -6,8 +6,8 @@ console.log(cakeList);
 class CakeComponent extends HTMLElement {
     constructor() {
         super();
-        this.#renderCakeList();
-        //this.#renderCartItems();
+        //this.#renderCakeList();
+        this.#renderCartItems();
     }
 
     #renderCakeList(){
