@@ -81,21 +81,46 @@ hr.cakey-sidebar{
   margin-left: 1rem;
 }
 
+.cake-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* This property sets the direction of the flexible items */
+  color: white;
+}
 
-.cake-sidebar a{
+.cake-sidebar li {
+  border-bottom: 1px solid #ccc; /* Add a border between list items */
+  padding: 8px;
+  font-size: var(--desktop-text-mid);
+}
+
+.cake-sidebar a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 8px;
+}
+
+.cake-sidebar a:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+}
+
+
+/* .cake-sidebar a{
+  color: white;
   text-decoration: none;
   list-style: none;
-  margin: 4rem;
+
   margin-top: 2rem;
-  text-align: center;
+  text-align:left;
   font-size: var(--desktop-text-small);
   padding-top: 0.5rem;
   cursor: pointer;
   transition: all 150ms ease-in-out 0s;
 }
-.cake-sidebar a{
-  color: #61868C;
-}
+
 
 .cake-sidebar ul li{
   list-style: none;
@@ -103,7 +128,8 @@ hr.cakey-sidebar{
   font-weight: 600;
   font-size: var(--desktop-text-mid);
   margin-bottom: 1rem;
-}
+  color: white;
+} */
 
 
 
