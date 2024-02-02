@@ -51,13 +51,9 @@ nav li a {
 nav li a:hover {
   background-color: #7CA27E;
 }
-/*.cake-heseg-container{
-  display: grid;
-  grid-template-columns: 15% 40% 20% 20%;
-  grid-template-rows: repeat(2,1fr);
-}*/
 
-.cake-heseg h2{
+
+.cake-heseg {
   margin-top: 3rem;
   font-size: var(--desktop-text-xlarge);
   margin-bottom: 3rem;
@@ -235,6 +231,7 @@ br{
 
 
 /*cake2 card heseg*/
+
 .cake-card2{
   background-image: url('/photos/back4.png');
   background-repeat: no-repeat;
@@ -310,123 +307,133 @@ br{
 
 }
 
-& section{
+section {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  & article{
-    background-image: url('../photos/back.jpg');
-    background-size: 100% ;
-    background-repeat: no-repeat;
-    background-position: center center;
-    border-radius: 2rem; 
-    width: 100%;
-     
-      & ul{
-          list-style: none;
-          margin: 1rem;
-          & .a1{
-              margin-left: 40%;
-              font-weight: bold;
-              font-size: 1.3rem;
-              color: var(--color-h);
-              
-          }
-          & li{
-              & .train{
-                  margin-top: 2rem;
-                  margin-bottom: 1rem;
-                  border-radius: 1rem;
-                  border: 1rem solid var(--color-pink);
-                  width: 90%;
-                  height: 30%;
-              }
-          }
-      }
-      & p{
-          font-size: 2rem;
-          color: var(--color-h);
-          margin-left: 20%;
-          margin-top: 10%;
-      }
-      & .orts{
-          font-size: 1rem;
-      }
-      & hr{
-          width: 80%;
-          margin-left: 10%;
-      }
+  grid-template-columns: repeat(4, auto);
+}
+
+section article {
+  background-image: url('../photos/back.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 2rem;
+  width: 100%;
+
+  ul {
+    list-style: none;
+    margin: 1rem;
   }
-  & .art{
-      width: 60%;
-      background-image: none;
-      margin-top: 8%;
+
+  .a1 {
+    margin-left: 40%;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--color-h);
   }
-  & .art1{
-      width: 35%;
-      margin-top: 8%;
-      & ul{
-          margin-left: 5rem;
-          margin-bottom: 2rem;
-          width: 75%;
-          list-style:circle;
-          & li{
-              font-size: 1rem;
-              color: var(--color-h);
-          }
-      }
+
+  li .train {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border: 1rem solid var(--color-pink);
+    width: 90%;
+    height: 30%;
+  }
+
+  p {
+    font-size: 2rem;
+    color: var(--color-h);
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+
+  .orts {
+    font-size: 1rem;
+  }
+
+  hr {
+    width: 80%;
+    margin-left: 10%;
   }
 }
-& #app{
-  & article{
-      text-align: center;
-      margin: 3rem;
-      width: max-content;
-      & h{
-          height: 5rem;
-          margin-left: 0rem;
-          font-size: 0.8rem;
-          color: var(--color-black);
-      }
-      & img{
-          margin-left: 1rem;
-          margin-top: 1rem;
-          
-          border-radius: 5rem;
-          width: 10rem;
-          height: 11rem;
-          cursor: pointer;
-          transition: all 150ms ease-in-out 0s;
-      }
-      & img:hover{
-          transform: scale(1.3);
-      }
-      & ul{
-          margin-top: 3rem;
-          padding: 0rem;
-      }
-  }
-  & button{
-      background-color: #f4a395;
-      border: none;
-      border-radius: 0.75rem;
-      padding: 0.25rem;
-      color: #fff;
-      transform: translateX(7rem) translateY(2.5rem);
-      font-size:1rem;
-      cursor: pointer;
-      transition: all 150ms ease-in-out 0s;
-  }
-      & button:hover{
-          background-color: var(--green);
-          border: 1px solid var(--green);
-          box-shadow: rgb(0 0 0 / 30%) 0px 4px 4px, rgb(231 238 236) 0px 0px 0px 3px;
-        }
-      & img{
-          border-radius: 2rem;
-          width: 25%;
-          height: 100%;
-          float: left;
-      }
+
+.art {
+  width: 60%;
+  background-image: none;
+  margin-top: 8%;
+}
+
+.art1 {
+  width: 35%;
+  margin-top: 8%;
+
+  ul {
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+    width: 75%;
+    list-style: circle;
   }
 
+  li {
+    font-size: 1rem;
+    color: var(--color-h);
+  }
+}
 
+#app article {
+  text-align: center;
+  margin: 3rem;
+  width: max-content;
+
+  h {
+    height: 5rem;
+    margin-left: 0rem;
+    font-size: 0.8rem;
+    color: var(--color-black);
+  }
+
+  img {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    width: 10rem;
+    height: 11rem;
+    cursor: pointer;
+    transition: all 150ms ease-in-out 0s;
+  }
+
+  img:hover {
+    transform: scale(1.3);
+  }
+
+  ul {
+    margin-top: 3rem;
+    padding: 0rem;
+  }
+}
+
+#app button {
+  background-color: #f4a395;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.25rem;
+  color: #fff;
+  transform: translateX(7rem) translateY(2.5rem);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 150ms ease-in-out 0s;
+}
+
+#app button:hover {
+  background-color: var(--green);
+  border: 1px solid var(--green);
+  box-shadow: rgb(0 0 0 / 30%) 0px 4px 4px, rgb(231 238 236) 0px 0px 0px 3px;
+}
+
+#app img {
+  border-radius: 2rem;
+  width: 25%;
+  height: 100%;
+  float: left;
+}
