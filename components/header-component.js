@@ -48,7 +48,7 @@ class HeaderComponent extends HTMLElement {
         <nav>
           <ul>
             <li><a href="aboutUs.html">Танилцуулга</a></li>
-            <li><a href="cake.html">Бүтээгдэхүүн</a></li>
+            <li><a href="cake1.html">Бүтээгдэхүүн</a></li>
             <li><a href="train.html">Сургалт</a></li>
             <li><a href="special.html">Онцгой</a></li>
           </ul>
