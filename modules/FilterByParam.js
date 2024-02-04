@@ -14,81 +14,81 @@ if (!usp.has("category")) {
 var products;
 
 switch (usp.get("category")) {
-    case "beef":
+    case "MilkyCream":
         products = new Products(
             uri,
-            "beef"
+            "MilkyCream"
         );
         products.download("product-container");
-        document.getElementById("page-title").textContent = "Үхэр";
+        document.getElementById("page-title").textContent = "Сүүн кремтэй бялуу";
         break;
-    case "chicken":
+    case "Maslo":
         products = new Products(
             uri,
-            "chicken"
+            "Maslo"
         );
         products.download("product-container");
-        document.getElementById("page-title").textContent = "Тахиа";
+        document.getElementById("page-title").textContent = "Маслон крэмтэй бялуу";
         break;
-    case "set":
+    case "Mousse":
         products = new Products(
             uri,
-            "set"
+            "Mousse"
         );
         products.download("product-container");
-        document.getElementById("page-title").textContent = "Багц";
+        document.getElementById("page-title").textContent = "Мусс бялуу";
         break;
-    case "single":
+    case "Seasonal":
         products = new Products(
             uri,
-            "single"
+            "Seasonal"
         );
         products.download("product-container");
-        document.getElementById("page-title").textContent = "Дан ";
+        document.getElementById("page-title").textContent = "Шинэ жилийн бялуу ";
         break;
-    case "hachir":
+    case "sale":
         products = new Products(
             uri,
-            "hachir"
+            "sale"
         );
         products.download("product-container");
-        document.getElementById("page-title").textContent = "Хачир";
+        document.getElementById("page-title").textContent = "Хямдралтай";
         break;
-    case "merch":
+    case "all":
         products = new Products(
             uri,
-            "merch"
+            "all"
         );
         products.download("product-container");
-        document.getElementById("page-title").textContent = "Мерчендайз";
+        document.getElementById("page-title").textContent = "Бүгд";
         break;
 }
 
 const urlParams = new URLSearchParams();
 
 window.onload = () => {
-    document.getElementById("beef").addEventListener("click", () => {
-        urlParams.set("category", "beef");
+    document.getElementById("MilkyCream").addEventListener("click", () => {
+        urlParams.set("category", "MilkyCream");
         window.location.href = "?" + urlParams.toString();
     });
-    document.getElementById("chicken").addEventListener("click", () => {
-        urlParams.set("category", "chicken");
+    document.getElementById("Maslo").addEventListener("click", () => {
+        urlParams.set("category", "Maslo");
         window.location.href = "?" + urlParams.toString();
     });
-    document.getElementById("set").addEventListener("click", () => {
-        urlParams.set("category", "set");
+    document.getElementById("Mousse").addEventListener("click", () => {
+        urlParams.set("category", "Mousse");
         window.location.href = "?" + urlParams.toString();
     });
-    document.getElementById("single").addEventListener("click", () => {
-        urlParams.set("category", "single");
+    document.getElementById("Seasonal").addEventListener("click", () => {
+        urlParams.set("category", "Seasonal");
         window.location.href = "?" + urlParams.toString();
     });
-    document.getElementById("hachir").addEventListener("click", () => {
-        urlParams.set("category", "hachir");
+    document.getElementById("sale").addEventListener("click", () => {
+        urlParams.set("category", "sale");
         window.location.href = "?" + urlParams.toString();
     });
-    document.getElementById("merch").addEventListener("click", () => {
-        urlParams.set("category", "merch");
+    document.getElementById("all").addEventListener("click", () => {
+        urlParams.set("category", "all");
         window.location.href = "?" + urlParams.toString();
     });
 };
