@@ -1,11 +1,11 @@
 class HeaderComponent extends HTMLElement {
-    constructor() {
-        super();
-        //implementation
-    }
+  constructor() {
+    super();
+    //implementation
+  }
 
-    connectedCallback() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
        <header class="cake-header">
         <div class="cake-container">
 
@@ -35,7 +35,8 @@ class HeaderComponent extends HTMLElement {
           <div class="header-item-3">
             <div class="icon_cart_globe">
             <a href="cart.html" class="icon cart" id="cart-icon">
-              <span id="cartCount">0</span><i class="fa fa-shopping-cart"></i>
+              <a href="./cart.html"><cart-component></cart-component></a>
+            <a href="login.html" class="icon globe">
             </a>
             <a href="#" class="icon globe">
               <span><i class="fas fa-globe"></i></span>
@@ -53,19 +54,19 @@ class HeaderComponent extends HTMLElement {
           </ul>
         </nav>
         `
-    }
+  }
 
-    disconnectedCallback() {
-        //implementation
-    }
+  disconnectedCallback() {
+    //implementation
+  }
 
-    attributeChangedCallback(name, oldVal, newVal) {
-        //implementation
-    }
+  attributeChangedCallback(name, oldVal, newVal) {
+    //implementation
+  }
 
-    adoptedCallback() {
-        //implementation
-    }
+  adoptedCallback() {
+    //implementation
+  }
 
 }
 
