@@ -11,9 +11,10 @@ class Cake {
           calories: 500,
           img: "../images/cake4.png",
 
-          rt: 5.0,
+          // rt: 5.0,
         },
         {
+          id: 2,
           name: "FRESH DELICIOUS CAKE",
           calories: 500,
           img: "../images/cake7.png",
