@@ -49,14 +49,15 @@
     border: none;
     background-color: #7CA27E;
     color: #fff;
-    padding: 1rem 0.7rem;
     display: flex;
     justify-content: space-between;
+    width: max-content;
     border-color: #7CA27E;
     cursor: pointer;
     transition: all 150ms ease-in-out 0s;
-
+    width: max-content;
 }
+
 .cart-btn:hover{
 
     background-color: var(--pink);
