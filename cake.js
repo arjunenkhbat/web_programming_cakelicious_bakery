@@ -11,7 +11,7 @@ class Cake {
           calories: 500,
           img: "../images/cake4.png",
 
-          // rt: 5.0,
+          rt: 5.0,
         },
         {
           id: 2,

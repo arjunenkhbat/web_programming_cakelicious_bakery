@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cake</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/order.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700&display=swap" rel="stylesheet">
@@ -13,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700&family=Roboto:wght@100;300;900&display=swap">
+   <script src="./modules/FilterByParam.js" type="module"></script>
+   <script src="./modules/PopUp.js" type="module"></script>
+   <script src="./components/CartComponent.js" defer></script>
   </head>
     <body>
       <header class="cake-header">
@@ -35,7 +39,7 @@
           </div>
     
           <div class="header-item-2">
-            <a href="main.html">
+            <a href="index.html">
               <img src="/images/removedBg-logo.png" alt="">
             </a>
           </div>
@@ -43,10 +47,8 @@
     
           <div class="header-item-3">
             <div class="icon_cart_globe">
-            <a href="cart.html" class="icon cart" id="cart-icon">
-              <span id="cartCount">0</span><i class="fa fa-shopping-cart"></i>
-            </a>
-            <a href="#" class="icon globe">
+              <a href="./cart.html"><cart-component></cart-component></a>
+            <a href="login.html" class="icon globe">
               <span><i class="fas fa-globe"></i></span>
             </a>
           </div>
@@ -61,7 +63,6 @@
             <li><a href="special.html">Онцгой</a></li>
           </ul>
         </nav>
-
           <!------------------------cake sidebar------------ ----->
   <div class="container">
     <div class="cake-heseg">
@@ -75,10 +76,11 @@
         <ul>
           <li>Бялуу</li>
           <hr class="cakey-sidebar">
-          <a href="?category=MilkyCream" id="milkycream-link" data-category="MilkyCream">Сүүн кремтэй бялуу</a>
-            <a href="?category=Mousse" id="mousse-link" data-category="Mousse">Мусс бялуу</a>
-            <a href="?category=Maslo" id="maslo-link" data-category="Maslo">Маслон кремтэй бялуу</a>
-            <a href="?category=NewYear" id="newyear-link" data-category="NewYear">Шинэ жилийн бялуу</a>
+          <li>Бүгд</li>
+          <li>Сүүн кремтэй бялуу</li>
+          <li>Мусс бялуу</li>
+          <li>Маслон кремтэй бялуу</li>
+          <li>Шинэ жилийн бялуу</li>
         </ul>
       </section>
       <!------------------------cake card1 heseg------------ ----->
@@ -156,7 +158,22 @@
     </div>
     <h4></h4>
        <!------------------------ cake list -->
-        <main id="app"></main>
+       <main>
+        <article class="menu-container">
+            <h1 id="page-title">Хүргэлт</h1>
+            <card-component mode="menu" id="beef" imgSrc="/images/cake1.png" name="Үхэр"></card-component>
+            <card-component mode="menu" id="chicken" imgSrc="/images/cake1.png" name="Тахиа"></card-component>
+            <card-component mode="menu" id="set" imgSrc="/images/cake1.png" name="Багц"></card-component>
+            <card-component mode="menu" id="single" imgSrc="/images/cake1.png"
+              name="Дан"></card-component>
+            <card-component mode="menu" id="hachir" imgSrc="/images/cake1.png" name="Хачир"></card-component>
+            <card-component mode="menu" id="merch" imgSrc="/images/cake1.png" name="Мерчендайз"></card-component>
+      
+          </article>
+        <div id="product-container">
+    
+        </div>
+    </main>
         <footer class="footer">
           <div class="footer-item-1">
             <img src="/images/removedBg-logo.png" alt="">
@@ -227,7 +244,7 @@
                     const mov = [
                     {
             id: 1,
-            category: "MilkyCream",
+            category: "Animation",
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake4.png",
@@ -236,7 +253,7 @@
           },
           {
             id: 2,
-            category: "Maslo",
+            category: "Adventure",
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake7.png",
@@ -244,7 +261,7 @@
           },
           {
             id:3,
-            category: "Mousse",
+            category: "Horror",
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake8.png",
@@ -252,7 +269,7 @@
           },
           {
             id:4,
-            category: "MilkyCream",
+            category: "Animation",
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake4.png",
@@ -260,7 +277,7 @@
           },
           {
             id:5,
-            category: "NewYear",
+            category: "Action",
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake-cake1.png",
@@ -268,7 +285,7 @@
           },
           {
             id:6,
-            category: "Mousse",
+            category: "Horror",
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake-cake1.png",
@@ -276,7 +293,7 @@
           },
           {
             id:7,
-            category: "NewYear",
+            category: "Action",
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake-cake1.png",
@@ -284,7 +301,7 @@
           },
           {
             id:8,
-            category: "MilkyCream",
+            category: "Animation",
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../images/cake-cake1.png",
@@ -292,14 +309,14 @@
           },
           {
             id:9,
-            category: "Maslo",
+            category: "Adventure",
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../photos/cake1.jpg",
             rt: 5.0,
           },
           { id:10,
-            category: "Mousse",
+            category: "Horror",
             name: "FRESH DELICIOUS CAKE",
             calories: 500,
             img: "../photos/cake1.jpg",
@@ -350,7 +367,7 @@
                 this.movies = [
                 {
                   id: 1,
-                  category: "MilkyCream",
+                  category: "Animation",
                   name: "FRESH DELICIOUS CAKE",
                   calories: 500,
                   img: "../images/cake4.png",
@@ -358,7 +375,7 @@
                 },
                 {
                   id: 2,
-                  category: "Maslo",
+                  category: "Adventure",
                   name: "FRESH DELICIOUS CAKE",
                   calories: 350,
                   img: "../images/cake4.png",
@@ -366,7 +383,7 @@
                 },
                 {
                   id:3,
-                  category: "Mousse",
+                  category: "Horror",
                   name: "FRESH DELICIOUS CAKE",
                   calories: 500,
                   img: "../images/cake8.png",
@@ -374,7 +391,7 @@
                 },
                 {
                   id:4,
-                  category: "MilkyCream",
+                  category: "Animation",
                   name: "FRESH DELICIOUS CAKE",
                   calories: 500,
                   img: "../images/cake4.png",
@@ -382,7 +399,7 @@
                 },
                 {
                   id:5,
-                  category: "NewYear",
+                  category: "Action",
                   name: "FRESH DELICIOUS CAKE",
                   calories: 500,
                   img: "../images/cake-cake1.png",
@@ -390,7 +407,7 @@
                 },
                 {
                   id:6,
-                  category: "Mousse",
+                  category: "Horror",
                   name: "FRESH DELICIOUS CAKE",
                   calories: 500,
                   img: "../images/cake-cake1.png",
@@ -398,7 +415,7 @@
                 },
                 {
                   id:7,
-                  category: "NewYear",
+                  category: "Action",
                   name: "FRESH DELICIOUS CAKE",
                   calories: 500,
                   img: "../images/cake-cake1.png",
@@ -406,7 +423,7 @@
                 },
                 {
                   id:8,
-                  category: "MilkyCream",
+                  category: "Animation",
                   name: "FRESH DELICIOUS CAKE",
                   calories: 500,
                   img: "../images/cake-cake1.png",
@@ -414,14 +431,14 @@
                 },
                 {
                   id:9,
-                  category: "Maslo",
+                  category: "Adventure",
                   name: "FRESH DELICIOUS CAKE",
                   calories: 500,
                   img: "../photos/cake1.jpg",
                   rt: 5.0,
                 },
                 { id:10,
-                  category: "Mousse",
+                  category: "Horror",
                   name: "FRESH DELICIOUS CAKE",
                   calories: 500,
                   img: "../photos/cake1.jpg",
