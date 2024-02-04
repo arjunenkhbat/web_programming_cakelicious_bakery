@@ -92,13 +92,32 @@ a:link {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
     flex-wrap: nowrap;
-    min-width:auto;
+    min-width: auto;
+    transition-duration: 200ms; /* Added for smoother transition */
 }
 
+.card-item:hover {
+    transition-duration: 200ms;
+    transform: scale(1.1); /* You can adjust the scale factor as needed */
+}
+
+
+
+/* .card-image {
+    object-fit: contain;
+    margin: 1em;
+} */
 .card-image {
     object-fit: contain;
     margin: 1em;
+    transition-duration: 200ms; /* Added for smoother transition */
 }
+
+.card-item:hover .card-image {
+    transform: scale(1.1); /* You can adjust the scale factor as needed */
+}
+
+
 
 /* .card-title {
     margin: 5%;
@@ -141,7 +160,8 @@ hr {
     margin: 10px 15px 15px 15px;
     padding: 8px 60px;
     display: inline-block;
-    border: 1px solid #5e1f13;
+    /* border: 1px solid #5e1f13; */
+    border: 1px solid black;
     border-radius: 25px;
     color: var(--default-brown);
     font-size: 16px;
