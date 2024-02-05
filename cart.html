@@ -26,22 +26,31 @@
 
 <body>
    <header-component></header-component>
-
-    <script>
-        window.addEventListener("scroll", function () {
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 100);
-        })
-    </script>
-
-    <article class="page-header">
-        <h1 class="page-title">Сагс</h1>
-    </article>
-
-    <div class="table-container">
-        <cart-table></cart-table>
-        <total-price></total-price>
+<main>
+<div class="cart-header">
+    <div class="cart-header-title">
+        <button class='far fa-arrow-alt-circle-left' style='font-size:24px'></button>
+        <h3 class="cart-header-title">Таны сагс</h3>
     </div>
+
+    <button class="cart-btn ">
+        <i class="fa fa-plus" style="font-size:12px"></i>
+        <p>Дахиад бялуу авах уу?</p>
+    </button>
+</div>
+<section class="cake-total">
+    
+        <cart-table></cart-table>
+    
+   
+       <total-price></total-price>
+
+   
+        
+   
+</section>
+    
+</main>
 
 
     <footer-component></footer-component>
