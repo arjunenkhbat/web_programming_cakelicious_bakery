@@ -93,31 +93,68 @@ class CardComponent extends HTMLElement {
             this.shadowRoot.innerHTML =
                         `
                         <style>
-                            .card-item { 
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                text-align: center;
-                                background-color: var(--background-color);
-                                color: var(--text-color);
-                                border-radius: 25px;
-                                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                                padding: 2%;
-                                cursor: pointer;
-                            }
-                            hr {
-                                color: var(--text-color);
-                            }
-                            .cart-title {
-                                font-size: 3em;
-                                text-size-adjust: auto;
-                            }
-                            .order-button {
-                                background-color: var(--background-color);
-                                color: var(--text-color);
-                            }
-                        </style>
-                        <article class="card-item">
+    .card-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: black;
+        border-radius: 25px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 2%;
+        cursor: pointer;
+        flex-wrap: nowrap;
+        min-width: auto;
+        // transition-duration: 200ms;
+        // background-color: white;
+    }
+
+    .card-item:hover {
+        transition-duration: 200ms;
+        transform: scale(1.1);
+    }
+
+    .card-image {
+        height: 200px; /* Set a fixed height for the images */
+        width: 100%; /* Ensure images resize proportionally */
+        object-fit: cover; /* Maintain aspect ratio while covering the specified height */
+        border-radius: 15px; /* Optional: Add border-radius to the image */
+    }
+   #Maslo.card-image{
+        
+        height: 90%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    #Seasonal.card-image{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        height: 90%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    hr {
+        color: var(--text-color);
+    }
+
+    .cart-title {
+        font-size: 10em;
+        text-size-adjust: auto;
+    }
+
+    .card-title {
+        font-size: var(--desktop-text-small);
+    }
+
+    .order-button {
+        background-color: var(--background-color);
+        color: black;
+    }
+</style>
+<article class="card-item">
                             <div id="item-section">
                                 <img class="card-image">
                                 <h2 class="card-title"></h2>

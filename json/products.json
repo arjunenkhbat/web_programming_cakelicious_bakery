@@ -5,7 +5,7 @@
         "calories": "500ккал",
         "description": "2 давхар үхрийн мах, бяслаг, бекон",
         "price": "27000₮",
-        "image": "/images/cake1.png"
+        "image": "/images/MilkyCream.png"
     },
 
     {
@@ -13,8 +13,8 @@
         "category": "Mousse",
         "calories": "500ккал",
         "description": "2 давхар үхрийн мах, бяслаг, бекон",
-        "price": "27000₮",
-        "image": "/images/cake1.png"
+        "price": "25000₮",
+        "image": "/images/Mousse.png"
     },
 
     {
@@ -22,8 +22,8 @@
         "category": "Maslo",
         "calories": "500ккал",
         "description": "2 давхар үхрийн мах, бяслаг, бекон",
-        "price": "27000₮",
-        "image": "/images/cake1.png"
+        "price": "31000₮",
+        "image": "/images/Maslo.png"
     },
 
     {
@@ -31,8 +31,8 @@
         "category": "Seasonal",
         "calories": "500ккал",
         "description": "Үхрийн мах, ногоо",
-        "price": "27000₮",
-        "image": "/images/cake1.png"
+        "price": "30000₮",
+        "image": "/images/NewYear.png"
     },
 
     {
@@ -40,8 +40,8 @@
         "category": "sale",
         "calories": "500ккал",
         "description": "Чикен Наггетс -15ш, Чикен Фрайс - 15ш, Онион Рингс - 8ш, шарсан төмс бүхий, кетчуптэй багц ",
-        "price": "36000₮",
-        "image": "/images/cake1.png"
+        "price": "30000₮->27000₮",
+        "image": "/images/NewYear2.png"
     },
 
     {
@@ -49,8 +49,8 @@
         "category": "sale",
         "calories": "500ккал",
         "description": "Чикен Наггетс -15ш, Чикен Фрайс - 15ш, Онион Рингс - 8ш, шарсан төмс бүхий, кетчуптэй багц ",
-        "price": "36000₮",
-        "image": "/images/cake1.png"
+        "price": "36000₮->30000₮",
+        "image": "/images/Maslo2.png"
     },
 
     {
@@ -58,8 +58,8 @@
         "category": "sale",
         "calories": "500ккал",
         "description": "Чикен Наггетс -15ш, Чикен Фрайс - 15ш, Онион Рингс - 8ш, шарсан төмс бүхий, кетчуптэй багц ",
-        "price": "36000₮",
-        "image": "/images/cake1.png"
+        "price": "36000₮->30000₮",
+        "image": "/images/Maslo.png"
     }
 
 ]

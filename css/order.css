@@ -24,11 +24,13 @@
 }
 
 #page-title {
+    margin-top: 3rem;
     margin-bottom: 0;
     grid-area: title;
-    font-size: 3rem;
-    color: var(--default-white);
+    font-size: var(--desktop-text-large);
+    color: black;
     text-align: center;
+    
 }
 
 .grid-item {
@@ -54,13 +56,13 @@
     height: 100px;
     width: auto;
 }
-/* 
+
 .grid-item-title {
     margin: 10px;
     padding: 0;
     text-align: center;
     text-decoration: none;
-} */
+}
 
 a:link {
     text-decoration: none;
@@ -73,7 +75,7 @@ a:link {
 }
 
 #product-container {
-    margin: 0 10% 0 10%;
+    margin: 10%;
     display: flex;
     gap: 1.5rem;
     row-gap: 1.5rem;
@@ -82,7 +84,7 @@ a:link {
     justify-content: center;
 }
 
-.card-item {
+/* .card-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,38 +95,39 @@ a:link {
     cursor: pointer;
     flex-wrap: nowrap;
     min-width: auto;
-    transition-duration: 200ms; /* Added for smoother transition */
+    transition-duration: 200ms; 
 }
 
 .card-item:hover {
     transition-duration: 200ms;
-    transform: scale(1.1); /* You can adjust the scale factor as needed */
-}
-
-
-
-/* .card-image {
-    object-fit: contain;
-    margin: 1em;
+    transform: scale(1.1); 
 } */
+
+
+
 .card-image {
     object-fit: contain;
     margin: 1em;
-    transition-duration: 200ms; /* Added for smoother transition */
+}
+.card-image {
+    object-fit: contain;
+    margin: 1em;
+    transition-duration: 200ms; 
 }
 
 .card-item:hover .card-image {
-    transform: scale(1.1); /* You can adjust the scale factor as needed */
+    transform: scale(1.1); 
 }
 
 
 
-/* .card-title {
+.card-title {
     margin: 5%;
-    font-size: 1.3rem;
+    font-size: 13rem;
     font-weight: 700;
     color: var(--default-brown);
-} */
+}
+
 
 .card-calories {
     margin: 5%;
@@ -143,7 +146,7 @@ a:link {
 hr {
     margin: 0px 20px;
     width: auto;
-    /* border: 1px solid #5e1f13; */
+    border: 1px solid #5e1f13;
     opacity: 0.5;
 }
 
@@ -160,12 +163,12 @@ hr {
     margin: 10px 15px 15px 15px;
     padding: 8px 60px;
     display: inline-block;
-    /* border: 1px solid #5e1f13; */
+    border: 1px solid #5e1f13;
     border: 1px solid black;
     border-radius: 25px;
     color: var(--default-brown);
     font-size: 16px;
-    /* font-weight: 700; */
+    font-weight: 700;
     text-decoration: 0;
     background-color: var(--default-white);
     transition-duration: 0.3s;
