@@ -7,33 +7,46 @@ class TotalPrice extends HTMLElement {
             `
             <style>
             .cart-calculator{
+                display: flex;
+                flex-direction: column;
                 background-color: #fff;
-                padding: 0.5rem 2rem;
-                width: 70%;
-                height: 50%;
+                padding: 0.5rem 0rem;
+                width: 100%;
+                height: max-content;
                 border-radius: 0.25rem;
                 box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-                margin: 20px 0
+                margin: 20px 0;
+                padding:1rem;
 
             }
 
             .cart-calculator-container{
-                display: flex;
+                display: grid;
+                grid-template-columns: 60% 40%;
                 justify-content: space-between;
                 align-items: center;
-                margin: 20px 0;
+                height: max-content;
+                width: 100%;
             }
             .une{
                 font-weight: 600;
+
+            }
+            hr {
+                border: 0;
+                height: 1px;
+                background: #ddd; /* Adjust the color to your preference */
+                margin: 10px 0;
             }
 
             .cart-addbtn{
+                justify-content: center;
                 border-radius: 0.25rem;
                 border: none;
                 background-color: #7CA27E;
                 color: #fff;
                 padding: 0.5rem 1.5rem;
-                width: 100%;
+                width: 90%;
                 margin: 2rem 0 1rem 0;
                 cursor: pointer;
                 transition: all 150ms ease-in-out 0s;
@@ -50,16 +63,16 @@ class TotalPrice extends HTMLElement {
     <aside class="cart-calculator">
         <div class="cart-calculator-container">
             <p class="tailbar">нийт үнэ</p>
-            <p class="une">80000</p>
+            <p class="une grand-total"></p>
         </div>
         <div class="cart-calculator-container">
             <p class="tailbar">хүргэлтийн үнэ</p>
-            <p class="une">5000</p>
+            <p class="une">5000₮</p>
         </div>
-    <hr>
+        <hr>
         <div class="cart-calculator-container">
             <p class="tailbar">нийт</p>
-            <p class="une">85000</p>
+            <p class=" une grand-total_A"></p>
         </div>
     <button class="cart-addbtn">Худалдаж авах</button>
     </aside>
@@ -77,6 +90,7 @@ class TotalPrice extends HTMLElement {
             let productsList = JSON.parse(localStorage.getItem("cart"));
             if (productsList == null) {
                 this.shadowRoot.querySelector(".grand-total").innerHTML = "0₮";
+                this.shadowRoot.querySelector(".grand-total_A").innerHTML = "0₮"
                 return;
             }
             let total = 0;
@@ -84,6 +98,7 @@ class TotalPrice extends HTMLElement {
                 total += parseInt(productsList[i].price) * parseInt(productsList[i].quantity);
             }
             this.shadowRoot.querySelector(".grand-total").innerHTML = total + "₮";
+            this.shadowRoot.querySelector(".grand-total_A").innerHTML = total + 5000 + "₮"
         })
     }
 

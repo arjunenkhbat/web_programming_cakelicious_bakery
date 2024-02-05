@@ -4,8 +4,8 @@
 
 .cake-total{
     
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 70% 20%;
     justify-content: space-between;
 }
 
@@ -20,6 +20,7 @@
     margin-top: 5rem;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -38,23 +39,32 @@
     box-shadow: rgb(0 0 0 / 30%) 0px 4px 4px, rgb(231 238 236) 0px 0px 0px 3px;
 }
 
+
 .cart-header-title{
-    margin-right: auto;
-    margin-left:1rem ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 5px;
+    
     
 }
 
 .cart-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 0.25rem;
+    padding: 0.5rem;
     border: none;
     background-color: #7CA27E;
     color: #fff;
-    display: flex;
-    justify-content: space-between;
-    width: max-content;
     border-color: #7CA27E;
+    width: 18%;
     cursor: pointer;
     transition: all 150ms ease-in-out 0s;
+    
+}
+.cart-btn p{
     width: max-content;
 }
 
@@ -64,9 +74,7 @@
     border: 1px solid var(--pink);
     box-shadow: rgb(0 0 0 / 30%) 0px 4px 4px, rgb(231 238 236) 0px 0px 0px 3px;
   }
-.cart-btn p{
-    margin-left: 5px;
-}
+
 #plus{
     font-size: var(--desktop-text-mid);
 }
@@ -76,8 +84,8 @@
 }
 
 .cart-item-container{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto;
     gap: 2rem;
     width: 70%;
 
