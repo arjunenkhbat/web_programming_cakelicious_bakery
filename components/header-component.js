@@ -26,7 +26,7 @@ class HeaderComponent extends HTMLElement {
           </div>
 
           <div class="header-item-2">
-            <a href="main.html">
+            <a href="index.html">
               <img src="/images/removedBg-logo.png" alt="">
             </a>
           </div>
