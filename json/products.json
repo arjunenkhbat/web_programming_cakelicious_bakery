@@ -3,8 +3,8 @@
         "name": "Сүүн кремтэй бялуу",
         "category": "MilkyCream",
         "calories": "500ккал",
-        "description": "2 давхар үхрийн мах, бяслаг, бекон",
-        "price": "27000₮",
+        "description": "a sweet, baked, breadlike food",
+        "price": "30000₮",
         "image": "/images/MilkyCream.png"
     },
 
@@ -12,7 +12,7 @@
         "name": "Мусс бялуу",
         "category": "Mousse",
         "calories": "500ккал",
-        "description": "2 давхар үхрийн мах, бяслаг, бекон",
+        "description": "a sweet, baked, breadlike food",
         "price": "25000₮",
         "image": "/images/Mousse.png"
     },
@@ -21,7 +21,7 @@
         "name": "Маслон крэмтэй бялуу",
         "category": "Maslo",
         "calories": "500ккал",
-        "description": "2 давхар үхрийн мах, бяслаг, бекон",
+        "description": "a sweet, baked, breadlike food",
         "price": "31000₮",
         "image": "/images/Maslo.png"
     },
@@ -40,7 +40,7 @@
         "category": "sale",
         "calories": "500ккал",
         "description": "Чикен Наггетс -15ш, Чикен Фрайс - 15ш, Онион Рингс - 8ш, шарсан төмс бүхий, кетчуптэй багц ",
-        "price": "30000₮->27000₮",
+        "price": "30000₮->30000",
         "image": "/images/NewYear2.png"
     },
 

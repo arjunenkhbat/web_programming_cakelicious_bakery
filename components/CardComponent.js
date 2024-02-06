@@ -22,13 +22,13 @@ class CardComponent extends HTMLElement {
         this.shadowRoot.querySelector("article div img").src = this.getAttribute("imgSrc");
         this.shadowRoot.querySelector("article div img").alt = this.getAttribute("imgAlt");
         this.shadowRoot.querySelector("article div img").height = this.getAttribute("mode") == "menu" ? 80 : 200;
-        this.shadowRoot.querySelector(".card-title").innerHTML = this.getAttribute("name"); 
-        this.setTheme(this.getAttribute("theme"));
+        this.shadowRoot.querySelector(".card-title").innerHTML = this.getAttribute("name");
+        // this.setTheme(this.getAttribute("theme"));
     }
 
     setUp() {
         if (this.getAttribute("mode") != "menu") {
-                
+
             this.shadowRoot.getElementById("item-section").addEventListener("click", () => {
                 this.showPopup();
             });
@@ -63,8 +63,8 @@ class CardComponent extends HTMLElement {
     }
 
     setDeliveryCard() {
-        
-        var addToCartButton = this.shadowRoot.getElementById("order-button"); 
+
+        var addToCartButton = this.shadowRoot.getElementById("order-button");
 
         addToCartButton.addEventListener("click", () => {
 
@@ -83,15 +83,15 @@ class CardComponent extends HTMLElement {
                     break;
                 }
             }
-            
+
             !isFoundInArray ? cart.addToCart(product) : window.alert("Бараа сагсанд орсон байна. Тоо ширхэгийг тохируулах бол Сагс цэс рүү орно уу.");
-            
+
         })
     }
 
     render() {
-            this.shadowRoot.innerHTML =
-                        `
+        this.shadowRoot.innerHTML =
+            `
                         <style>
     .card-item {
         display: flex;
@@ -154,7 +154,7 @@ class CardComponent extends HTMLElement {
         color: black;
     }
 </style>
-<article class="card-item">
+                        <article class="card-item">
                             <div id="item-section">
                                 <img class="card-image">
                                 <h2 class="card-title"></h2>

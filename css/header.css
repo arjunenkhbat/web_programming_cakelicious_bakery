@@ -35,7 +35,11 @@
   margin-left: auto;
   margin-right: 5%;
 }
-
+.icon_cart_globe{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
  nav a{
   text-decoration: none;

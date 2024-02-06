@@ -51,7 +51,7 @@
 
 .cart-btn{
     display: flex;
-    justify-content: space-between;
+    
     align-items: center;
     border-radius: 0.25rem;
     padding: 0.5rem;
@@ -64,8 +64,11 @@
     transition: all 150ms ease-in-out 0s;
     
 }
-.cart-btn p{
+.cart-add-btn{
     width: max-content;
+    color: #fff;
+    
+
 }
 
 .cart-btn:hover{
