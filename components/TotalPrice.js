@@ -27,6 +27,9 @@ class TotalPrice extends HTMLElement {
                 align-items: center;
                 height: max-content;
                 width: 100%;
+                margin: auto;
+                padding-left:15px;
+               
             }
             .une{
                 font-weight: 600;
@@ -34,20 +37,21 @@ class TotalPrice extends HTMLElement {
             }
             hr {
                 border: 0;
-                height: 1px;
+                height: 2px;
                 background: #ddd; /* Adjust the color to your preference */
-                margin: 10px 0;
+                margin: 0px 0;
+                
             }
 
             .cart-addbtn{
-                justify-content: center;
+                align-items: center;
                 border-radius: 0.25rem;
                 border: none;
                 background-color: #7CA27E;
                 color: #fff;
-                padding: 0.5rem 1.5rem;
+                padding: 1rem 0;
                 width: 90%;
-                margin: 2rem 0 1rem 0;
+                margin: 10px auto;
                 cursor: pointer;
                 transition: all 150ms ease-in-out 0s;
             }
@@ -60,23 +64,23 @@ class TotalPrice extends HTMLElement {
 
                         </style>
             
-    <aside class="cart-calculator">
-        <div class="cart-calculator-container">
-            <p class="tailbar">нийт үнэ</p>
-            <p class="une grand-total"></p>
-        </div>
-        <div class="cart-calculator-container">
-            <p class="tailbar">хүргэлтийн үнэ</p>
-            <p class="une">5000₮</p>
-        </div>
-        <hr>
-        <div class="cart-calculator-container">
-            <p class="tailbar">нийт</p>
-            <p class=" une grand-total_A"></p>
-        </div>
-    <button class="cart-addbtn">Худалдаж авах</button>
-    </aside>
-        `
+            <aside class="cart-calculator">
+                <div class="cart-calculator-container">
+                    <p class="tailbar">Нийт үнэ :</p>
+                    <p class="une grand-total">0₮</p>
+                </div>
+                <div class="cart-calculator-container">
+                    <p class="tailbar">Хүргэлтийн үнэ :</p>
+                    <p class="une delivery">0₮</p>
+                </div>
+                <hr>
+                <div class="cart-calculator-container">
+                    <p class="tailbar">Нийт төлбөр :</p>
+                    <p class=" une grand-total_A">0₮</p>
+                </div>
+            <button class="cart-addbtn">Худалдаж авах</button>
+            </aside>
+                `
     }
 
     connectedCallback() {
@@ -90,6 +94,7 @@ class TotalPrice extends HTMLElement {
             let productsList = JSON.parse(localStorage.getItem("cart"));
             if (productsList == null) {
                 this.shadowRoot.querySelector(".grand-total").innerHTML = "0₮";
+                this.shadowRoot.querySelector('.delivery').innerHTML = "0₮"
                 this.shadowRoot.querySelector(".grand-total_A").innerHTML = "0₮"
                 return;
             }
@@ -98,6 +103,7 @@ class TotalPrice extends HTMLElement {
                 total += parseInt(productsList[i].price) * parseInt(productsList[i].quantity);
             }
             this.shadowRoot.querySelector(".grand-total").innerHTML = total + "₮";
+            this.shadowRoot.querySelector(".delivery").innerHTML = "5000₮"
             this.shadowRoot.querySelector(".grand-total_A").innerHTML = total + 5000 + "₮"
         })
     }
