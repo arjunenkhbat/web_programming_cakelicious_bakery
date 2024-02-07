@@ -143,7 +143,7 @@ class CardComponent extends HTMLElement {
         flex-wrap: nowrap;
         min-width: auto;
         // transition-duration: 200ms;
-        // background-color: white;
+        background-color: white;
 
     }
 

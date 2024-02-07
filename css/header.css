@@ -31,9 +31,19 @@
 }
   
 
-.header-item-3{
-  margin-left: auto;
-  margin-right: 5%;
+.header-item-3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.icon_cart_globe {
+  display: flex;
+  align-items: center;
+}
+
+.icon_cart_globe a {
+  margin-right: 20px; /* Adjust the margin as needed */
 }
 
 
