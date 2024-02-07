@@ -1,3 +1,5 @@
+
+// TotalPrice.js файлаас шаардлагатай функцуудыг импортолж оруулна
 import "./TotalPrice.js"
 
 
@@ -11,13 +13,9 @@ class CartTable extends HTMLElement {
         super();
         this.attachShadow({ mode: "open" });
         this.shadowRoot.innerHTML = `
-        
-        
-          
                 <div class="cart-item-container">
 
                 </div>
-            </table>
         `
     }
 
@@ -29,6 +27,10 @@ class CartTable extends HTMLElement {
         const productsList = JSON.parse(localStorage.getItem("cart"));
         if (productsList == null) {
             return;
+        }
+        for (let i = 0; i < productsList.length; i++) {
+            console.log('Source:', productsList[i]);
+
         }
 
         this.shadowRoot.querySelector(".cart-item-container").innerHTML = ``;
@@ -125,7 +127,7 @@ class CartTable extends HTMLElement {
                     </style>
 
                     <div class="cart-item">
-                        <img class="cart-item-img" src="../images/cake1.png" alt="byluunii zurag1" >
+                        <img class="cart-item-img" src="${productsList[i].img}" alt="byluunii zurag1" >
 
                     <div >
                         <p class="cart-item-name">${productsList[i].name}</p>
@@ -134,7 +136,7 @@ class CartTable extends HTMLElement {
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
-                        <p>calor</p>
+                        <p>${productsList[i].calories}</p>
                     </div>
                     <p class="cart-item-perprice">${productsList[i].price}</p>
                     <div class="cart-item-button-container">
@@ -212,7 +214,7 @@ class CartTable extends HTMLElement {
                 let position;
                 for (let j = 0; j < productsList.length; j++) {
                     if (productsList[j].name == productName) {
-                        position = j; // Fix: Use j instead of i
+                        position = j;
                         break;
                     }
                 }
@@ -254,16 +256,3 @@ class CartTable extends HTMLElement {
 }
 
 window.customElements.define("cart-table", CartTable);
-// <tr>
-//     <td>
-//         <button class="remove">&times;</button>
-//     </td>
-//     <td class="name">${productsList[i].name}</td>
-//     <td>
-//         <button class="decrement">-</button>
-//             <span class="quantity">${productsList[i].quantity}</span>
-//         <button class="cart-btn-kkk">+</button>
-//     </td>
-//     <td class="price">${productsList[i].price}</td>
-//     <td class="total">${parseInt(productsList[i].price) * parseInt(productsList[i].quantity)}₮</td>
-// </tr>

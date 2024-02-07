@@ -12,21 +12,21 @@ class HeaderComponent extends HTMLElement {
           <div class="header-item-1">
 
             <div class="logo1">
-              <a href="#" class="icon facebook">
+              <a href="https://www.facebook.com/" class="icon facebook">
                 <span><i class="fab fa-facebook-f"></i></span>
               </a>
-              <a href="#" class="icon instagram">
+              <a href="https://www.instagram.com/" class="icon instagram">
                 <span><i class="fab fa-instagram"></i></span>
               </a>
 
-              <a href="#" class="icon youtube">
+              <a href="https://www.youtube.com/" class="icon youtube">
                 <span><i class="fab fa-youtube"></i></span>
               </a>
             </div>
           </div>
 
           <div class="header-item-2">
-            <a href="main.html">
+            <a href="index.html">
               <img src="/images/removedBg-logo.png" alt="">
             </a>
           </div>
@@ -35,16 +35,26 @@ class HeaderComponent extends HTMLElement {
           <div class="header-item-3">
           <div class="icon_cart_globe">
             <a href="cart.html" class="icon cart" id="cart-icon">
+<<<<<<< HEAD
               <a href="./cart.html"><cart-component></cart-component></a>
             </a>
             <a href="login.html" class="icon login"> <!-- Change class to 'login' -->
               <span><i class="fas fa-user"></i></span> <!-- Assuming you want to use a user icon -->
             </a>
+=======
+              <cart-component></cart-component></a>
+            <a href="login.html" class="icon globe">
+            <span><i class="fas fa-user-circle" ></i></span>
+            </a>
+            
+>>>>>>> 440edaa176842f535bd01a28bb766836e83fef4e
           </div>
         </div>
         </div>
       </header>
-        <nav>
+        
+      
+      <nav>
           <ul>
             <li><a href="aboutUs.html">Танилцуулга</a></li>
             <li><a href="cake1.html">Бүтээгдэхүүн</a></li>
