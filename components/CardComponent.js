@@ -194,16 +194,16 @@ class CardComponent extends HTMLElement {
 </style>
 
 <article class="card-item">
-                            <div id="item-section">
-                                <img class="card-image">
-                                <h2 class="card-title"></h2>
-                                <slot name="card-calories"></slot>
-                                <slot name="card-line"></slot>
-                                <slot name="card-price"></slot>
-                            </div>
-                            <slot name="card-button" role="button" id="order-button"></slot>
-                        </article>
-            `;
+<div id="item-section">
+    <img class="card-image" id="card-image"> <!-- Add id to img element -->
+    <h2 class="card-title"></h2>
+    <slot name="card-calories"></slot>
+    <slot name="card-line"></slot>
+    <slot name="card-price"></slot>
+</div>
+<slot name="card-button" role="button" id="order-button"></slot>
+</article>
+`;
     }
 }
 
