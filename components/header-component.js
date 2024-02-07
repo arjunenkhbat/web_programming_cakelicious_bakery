@@ -33,13 +33,13 @@ class HeaderComponent extends HTMLElement {
 
 
           <div class="header-item-3">
-            <div class="icon_cart_globe">
+          <div class="icon_cart_globe">
             <a href="cart.html" class="icon cart" id="cart-icon">
-              <cart-component></cart-component></a>
-            <a href="login.html" class="icon globe">
-            <span><i class="fas fa-user-circle" ></i></span>
+              <a href="./cart.html"><cart-component></cart-component></a>
             </a>
-            
+            <a href="login.html" class="icon login"> <!-- Change class to 'login' -->
+              <span><i class="fas fa-user"></i></span> <!-- Assuming you want to use a user icon -->
+            </a>
           </div>
         </div>
         </div>

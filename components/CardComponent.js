@@ -11,6 +11,7 @@ class CardComponent extends HTMLElement {
 
     connectedCallback() {
         this.setUp();
+        this.addThemeToggleListener();
     }
 
     static get observedAttributes() {
@@ -38,6 +39,42 @@ class CardComponent extends HTMLElement {
             }
         }
     }
+
+    setTheme(theme) {
+        const root = document.documentElement;
+      
+        if (theme === 'dark') {
+          root.style.setProperty('--background-color', 'var(--background-color-dark)');
+          root.style.setProperty('--text-color', 'var(--text-color-dark)');
+        } else {
+          root.style.setProperty('--background-color', 'var(--background-color-light)');
+          root.style.setProperty('--text-color', 'var(--text-color-light)');
+        }
+      }
+  
+
+      addThemeToggleListener() {
+        const themeToggle = this.shadowRoot.querySelector("#theme-toggle");
+    
+        if (themeToggle) {
+            themeToggle.addEventListener("click", () => {
+                this.toggleNightMode();
+            });
+        } else {
+            console.error("Theme toggle button not found");
+        }
+    }
+    toggleNightMode() {
+        const currentTheme = this.getAttribute("theme");
+    
+        // Toggle between night and day mode
+        const newTheme = currentTheme === "dark" ? "light" : "dark";
+    
+        // Update the 'theme' attribute to trigger attributeChangedCallback
+        this.setAttribute("theme", newTheme);
+    }
+    
+  
 
     showPopup() {
         document.getElementById("product-container").insertAdjacentHTML("afterend", `
@@ -106,7 +143,8 @@ class CardComponent extends HTMLElement {
         flex-wrap: nowrap;
         min-width: auto;
         // transition-duration: 200ms;
-        // background-color: white;
+        background-color: white;
+
     }
 
     .card-item:hover {
@@ -151,20 +189,21 @@ class CardComponent extends HTMLElement {
 
     .order-button {
         background-color: var(--background-color);
-        color: black;
+        color: gray;
     }
 </style>
-                        <article class="card-item">
-                            <div id="item-section">
-                                <img class="card-image">
-                                <h2 class="card-title"></h2>
-                                <slot name="card-calories"></slot>
-                                <slot name="card-line"></slot>
-                                <slot name="card-price"></slot>
-                            </div>
-                            <slot name="card-button" role="button" id="order-button"></slot>
-                        </article>
-            `;
+
+<article class="card-item">
+<div id="item-section">
+    <img class="card-image" id="card-image">
+    <h2 class="card-title"></h2>
+    <slot name="card-calories"></slot>
+    <slot name="card-line"></slot>
+    <slot name="card-price"></slot>
+</div>
+<slot name="card-button" role="button" id="order-button"></slot>
+</article>
+`;
     }
 }
 
