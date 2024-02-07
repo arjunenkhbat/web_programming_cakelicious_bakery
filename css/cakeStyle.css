@@ -135,14 +135,19 @@ hr.cakey-sidebar{
 
 /* cake card heseg*/
 .cake-card{
-  background-image: url('/photos/back.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 14rem;
-  height: 16rem;
-  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin-bottom: 1rem;
+  color: black;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 2%;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  min-width: auto;
+  transition-duration: 200ms;
+  background-color: white;
 }
 
 .cake-card-title{

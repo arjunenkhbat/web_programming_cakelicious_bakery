@@ -8,6 +8,16 @@
   --white: #FFFFFF ;
   --saaral: #d3d3d3 ;
   --primary_color: rgba(211, 163, 163, 0.897);
+  
+  --background-color-light: #ffffff;  /* Light mode background color */
+  --text-color-light: #000000;        /* Light mode text color */
+
+  --background-color-dark: #1a1a1a;   /* Dark mode background color */
+  --text-color-dark: #ffffff;   --background-color-light: #ffffff;  /* Light mode background color */
+  --text-color-light: #000000;        /* Light mode text color */
+
+  --background-color-dark: #1a1a1a;   /* Dark mode background color */
+  --text-color-dark: #ffffff; 
 
 
   /* desktop font size */
