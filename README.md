@@ -1,2 +1,0 @@
-# web_programming_cakelicious_bakery
-Web Programming
