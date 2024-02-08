@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Сүүн кремтэй бялуу",
+        "category": "MilkyCream",
+        "calories": "500ккал",
+        "description": "a sweet, baked, breadlike food",
+        "price": "30000₮",
+        "image": "/app/assets/images/MilkyCream.png"
+    },
+
+    {
+        "name": "Мусс бялуу",
+        "category": "Mousse",
+        "calories": "500ккал",
+        "description": "a sweet, baked, breadlike food",
+        "price": "25000₮",
+        "image": "/app/assets/images/Mousse.png"
+    },
+
+    {
+        "name": "Маслон крэмтэй бялуу",
+        "category": "Maslo",
+        "calories": "500ккал",
+        "description": "a sweet, baked, breadlike food",
+        "price": "31000₮",
+        "image": "/app/assets/images/Maslo.png"
+    },
+
+    {
+        "name": "Шинэ жилийн бялуу",
+        "category": "Seasonal",
+        "calories": "500ккал",
+        "description": "Үхрийн мах, ногоо",
+        "price": "30000₮",
+        "image": "/app/assets/images/NewYear.png"
+    },
+
+    {
+        "name": "Шинэ жилийн бялуу",
+        "category": "sale",
+        "calories": "500ккал",
+        "description": "Чикен Наггетс -15ш, Чикен Фрайс - 15ш, Онион Рингс - 8ш, шарсан төмс бүхий, кетчуптэй багц ",
+        "price": "30000₮->30000",
+        "image": "/app/assets/images/NewYear2.png"
+    },
+
+    {
+        "name": "Маслон крэмтэй бялуу",
+        "category": "sale",
+        "calories": "500ккал",
+        "description": "Чикен Наггетс -15ш, Чикен Фрайс - 15ш, Онион Рингс - 8ш, шарсан төмс бүхий, кетчуптэй багц ",
+        "price": "36000₮->30000₮",
+        "image": "/app/assets/images/Maslo2.png"
+    },
+
+    {
+        "name": "Маслон крэмтэй бялуу",
+        "category": "sale",
+        "calories": "500ккал",
+        "description": "Чикен Наггетс -15ш, Чикен Фрайс - 15ш, Онион Рингс - 8ш, шарсан төмс бүхий, кетчуптэй багц ",
+        "price": "36000₮->30000₮",
+        "image": "/app/assets/images/Maslo.png"
+    }
+
+]
