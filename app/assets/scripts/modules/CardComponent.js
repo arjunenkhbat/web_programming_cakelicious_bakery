@@ -2,18 +2,20 @@ class CardComponent extends HTMLElement {
 
     constructor() {
         super();
+        // Тус элемэнт нь shadow DOM-тэй холбох
         this.attachShadow({ mode: "open" });
+        // HTML upadate хийх
         this.render();
     }
-
+    // Холбогдсон байгаа үед update хийх
     connectedCallback() {
         this.setUp();
     }
-
+    // Сонгосон аттрибутуудыг мөн хянана
     static get observedAttributes() {
         return ["id", "imgSrc", "theme", "imgAlt", "name", "calories", "description", "price", "mode"];
     }
-
+    // Аттрибутуудыг өөрчилж байгаа үед холбоотой элемэнтийг шинэчилж өгөх
     attributeChangedCallback(name, oldValue, newValue) {
         this.shadowRoot.querySelector("article div img").id = this.getAttribute("id");
         this.shadowRoot.querySelector("article div img").src = this.getAttribute("imgSrc");
