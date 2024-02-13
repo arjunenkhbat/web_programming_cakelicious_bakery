@@ -82,8 +82,7 @@ class CardComponent extends HTMLElement {
         cursor: pointer;
         flex-wrap: nowrap;
         min-width: auto;
-        // transition-duration: 200ms;
-        // background-color: white;
+
     }
 
     .card-item:hover {
@@ -91,27 +90,8 @@ class CardComponent extends HTMLElement {
         transform: scale(1.1);
     }
 
-    .card-image {
-        height: 90%; /* Set a fixed height for the images */
-        width: 100%; /* Ensure images resize proportionally */
-        object-fit: cover; /* Maintain aspect ratio while covering the specified height */
-        border-radius: 15px; /* Optional: Add border-radius to the image */
-    }
-   #Maslo.card-image{
-        
-        height: 90%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 15px;
-    }
-    #Seasonal.card-image{
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        height: 90%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 15px;
-    }
+  
+ 
 
     hr {
         color: var(--text-color);
