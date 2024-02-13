@@ -115,7 +115,7 @@ class CardComponent extends HTMLElement {
     }
 
     .card-image {
-        height: 200px; /* Set a fixed height for the images */
+        height: 90%; /* Set a fixed height for the images */
         width: 100%; /* Ensure images resize proportionally */
         object-fit: cover; /* Maintain aspect ratio while covering the specified height */
         border-radius: 15px; /* Optional: Add border-radius to the image */
