@@ -164,12 +164,7 @@ body {
     }
 }
 
-@media(max-width: 693px){
-section{
-    display: flex;
-    flex-direction: row;
-}
-} */
+*/
 main{
     width: 85%;
     margin: auto;
@@ -192,11 +187,17 @@ main{
 .art li{
     list-style: none;
 }
+.art-video{
+    gap: 1rem;
+}
 
 
 @media(max-width: 693px) {
-    section {
-        display: flex;
-        flex-direction: row;
-    }
+    .art-container {
+            flex-direction: column;
+            gap: 3rem;
+            padding: 3rem 0;
+            justify-content: space-between;
+        }
+    
 }
