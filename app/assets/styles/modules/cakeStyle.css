@@ -1,5 +1,5 @@
 
-.cake-header .cake-container{
+/* .cake-header .cake-container{
   display: grid;
   grid-template-columns: repeat(3, auto);
   align-items: center;
@@ -50,7 +50,7 @@ nav li a {
 }
 nav li a:hover {
   background-color: #7CA27E;
-}
+} */
 /*.cake-heseg-container{
   display: grid;
   grid-template-columns: 15% 40% 20% 20%;

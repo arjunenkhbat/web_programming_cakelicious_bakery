@@ -70,6 +70,7 @@ class CardComponent extends HTMLElement {
             let product = {
                 name: this.getAttribute("name"),
                 price: this.querySelector(".price").innerHTML,
+             
                 quantity: 1
             }
 

@@ -163,3 +163,10 @@ body {
         }
     }
 }
+
+@media(max-width: 693px){
+    .art-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
