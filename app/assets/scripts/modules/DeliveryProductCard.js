@@ -41,7 +41,6 @@ class DeliveryProductCard extends HTMLElement {
             <div class="active" id="overlay"></div>
             `
             );
-            
         }
         )
         this.shadowRoot.getElementById("order-button").addEventListener("click", () => {
