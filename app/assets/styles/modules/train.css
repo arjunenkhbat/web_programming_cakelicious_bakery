@@ -69,6 +69,7 @@ body {
 
                 .orts {
                     font-size: 1rem;
+                    margin: auto;
                 }
 
                 hr {
@@ -86,6 +87,7 @@ body {
             .art1 {
                 width: 35%;
                 margin-top: 8%;
+                margin: auto;
 
                 ul {
                     margin-left: 5rem;
@@ -159,5 +161,12 @@ body {
                 float: left;
             }
         }
+    }
+}
+
+@media(max-width: 693px){
+    .art-container{
+        display: flex;
+        flex-direction: column;
     }
 }

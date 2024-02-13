@@ -15,7 +15,7 @@
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.0"
   },
-  "name": "erhses.github.io",
+  "name": "cakelicious",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
