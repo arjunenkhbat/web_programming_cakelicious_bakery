@@ -1,16 +1,6 @@
-import PopUp from "../modules/PopUp.js"
 
-const template = document.createElement("template");
 
-template.innerHTML = `
-            <link rel="stylesheet" href="./styles/menu.css"/>
-            <a role="button" id="" class="product-item">
-                  <img class="product-image" height="200">
-                  <h2 class="product-title"></h2>
-                  <h4 class="product-calories"></h4>
-                  <p class="product-description"></p>
-            </a>
-`;
+
 
 class ProductCard extends HTMLElement {
 
@@ -40,12 +30,11 @@ class ProductCard extends HTMLElement {
             <div class="active" id="overlay"></div>
             `
             );
-            const popUp = new PopUp();
-            popUp.close();
+
         }
         )
-        
-      
+
+
     }
 
     attributeChangedCallback(name, oldValue, newValue) {
@@ -53,8 +42,8 @@ class ProductCard extends HTMLElement {
         this.shadowRoot.querySelector("a img").src = this.getAttribute("imgSrc");
         this.shadowRoot.querySelector("a img").alt = this.getAttribute("imgAlt");
         this.shadowRoot.querySelector("a h2").innerHTML = this.getAttribute("productName");
-        this.shadowRoot.querySelector("a h4").innerHTML = this.getAttribute("productCalories");  
-    }   
+        this.shadowRoot.querySelector("a h4").innerHTML = this.getAttribute("productCalories");
+    }
 }
 
 export default ProductCard

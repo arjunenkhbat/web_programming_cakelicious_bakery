@@ -100,7 +100,7 @@ const configurePassport = require("./passportConfig");
 const { has } = require("lodash");
 configurePassport(passport);
 
-const PORT = 5000;
+const PORT = 3000;
 //api documentation heseg
 const options = {
   definition: {
