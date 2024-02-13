@@ -1,5 +1,12 @@
 /**
  * @swagger
+ * components:
+ *   securitySchemes:
+ *     cookieAuth:
+ *       type: apiKey
+ *       in: cookie
+ *       name: connect.sid
+ *
  * /register:
  *   post:
  *     summary: Register a new user
