@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Sign in for a new account at YourWebsite. Register with your email and password." />
+  <meta name="keywords" content="sign in, create account, registration, email, password" />
+  <title>Нэвтрэх</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="/app/assets/styles/styles.css" rel="stylesheet">
+</head>
+
+<body class="login">
+  <div class="container" id="container">
+      <form action="/login" method="POST">
+        <h1 class="login__h1">Sign In</h1>
+        <a href="/register">Sign Up Today</a>
+        <input class="login__input" type="email" placeholder="Email" id="email" name="email" required />
+        <input class="login__input" type="password" placeholder="Password" id="password" name="password" required />
+        <div>
+          <input type="submit" value="Login" class="loginbutton"/>
+        </div>
+      </form>
+    </div>
+</body>
+
+</html>
