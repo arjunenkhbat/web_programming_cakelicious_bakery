@@ -28,38 +28,14 @@ class CardComponent extends HTMLElement {
     setUp() {
         if (this.getAttribute("mode") != "menu") {
 
-            this.shadowRoot.getElementById("item-section").addEventListener("click", () => {
-                this.showPopup();
-            });
-
+         
             if (this.getAttribute("mode") == "delivery-item") {
                 this.setDeliveryCard();
             }
         }
     }
 
-    showPopup() {
-        document.getElementById("product-container").insertAdjacentHTML("afterend", `
-        <link id="style" rel="stylesheet" href="./styles/deliveryItemStyle.css">
-        <div class="modal active" id="modal">
-            <div class="modal-body">
-                <button data-close-button class="close-button" id="close-button">&times;</button>
-                <img src="${this.getAttribute("imgSrc")}" alt="${this.getAttribute("imgAlt")}"class="product-image" height="200">
-                <h2 class="product-title">${this.getAttribute("name")}</h2>
-                <h4 class="product-calories">${this.getAttribute("calories")}</h4> 
-                <p class="product-description">${this.getAttribute("description")}</p>
-            </div>
-        </div>
-        <div class="active" id="overlay"></div>
-        `
-        );
-        const closeModalButton = document.getElementById("close-button")
-        closeModalButton.addEventListener("click", () => {
-            document.getElementById("style").remove();
-            document.getElementById("modal").remove();
-            document.getElementById("overlay").remove();
-        });
-    }
+   
 
     setDeliveryCard() {
 
@@ -105,8 +81,7 @@ class CardComponent extends HTMLElement {
         cursor: pointer;
         flex-wrap: nowrap;
         min-width: auto;
-        // transition-duration: 200ms;
-        // background-color: white;
+
     }
 
     .card-item:hover {
@@ -114,27 +89,8 @@ class CardComponent extends HTMLElement {
         transform: scale(1.1);
     }
 
-    .card-image {
-        height: 90%; /* Set a fixed height for the images */
-        width: 100%; /* Ensure images resize proportionally */
-        object-fit: cover; /* Maintain aspect ratio while covering the specified height */
-        border-radius: 15px; /* Optional: Add border-radius to the image */
-    }
-   #Maslo.card-image{
-        
-        height: 90%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 15px;
-    }
-    #Seasonal.card-image{
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        height: 90%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 15px;
-    }
+  
+ 
 
     hr {
         color: var(--text-color);

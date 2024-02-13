@@ -52,8 +52,7 @@ class DeliveryProductCard extends HTMLElement {
             <div class="active" id="overlay"></div>
             `
             );
-            const popUp = new PopUp();
-            popUp.close();
+           
         }
         )
         this.shadowRoot.getElementById("order-button").addEventListener("click", () => {
