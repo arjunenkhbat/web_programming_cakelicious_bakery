@@ -41,7 +41,7 @@
   justify-content: space-between;
 }
 
- nav a{
+ /* nav a{
   text-decoration: none;
 }
 nav ul a{
@@ -71,8 +71,19 @@ nav ul {
 }
  nav li a:hover {
   color: var(--saaral);
+} */
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color:#7CA27E ;
+  list-style: none;
+  padding: 0.75rem;
 }
-
+nav ul a{
+  text-decoration: none;
+  color: white;
+}
 .main{
   width: 85%;
   background-color: #FFF3E1;
@@ -142,116 +153,28 @@ top: -10px;
 
 
 
-@media(max-width:800px){
-  .main{
-    width: 100%;
-    background-color: #FFF3E1;
-    margin: auto;
-  }
-  
-.check{
-  position: absolute;
-  z-index: 4;
-  top: 0;
-  left: 0;
-  padding: 10px;
-  width: 40px;
-  height: 40px;
-  opacity: 0;
- 
-}
-.hamburger{
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  height: 30px;
-  width: 30px;
-  z-index: 3;
-  padding: 2 rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s ease;
- 
-}
-.hamburger>div{
-  position: relative;
-  flex: none;
-  height: 2px;
-  width: 100%;
-  background: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
 
-.hamburger>div::before,
- .hamburger>div::after{
-content: '';
-position: absolute;
-z-index: 3;
-width: 100%;
-height: 2px;
-background:3inherit;
-top: -10px;
-}
-.hamburger>div::after{
-  top: 10px;
-}
+@media(max-width: 693px){
+    .header-item-1 {
+    display: none;
+    }
+    .cake-header .cake-container {
+    display: flex;
+    justify-content: center;
+    }
 
-.check:checked+ .hamburger{
-  transform: rotate(135deg);
-}
-.check:checked+.hamburger>div::before,
-.check:checked+.hamburger>div::after{
-  top: 0;
-  transform: rotate(90deg);
-}
+    .header-item-2 img {
+    width: 50%;
+    height: auto;
 
-.check:checked ~.header-menu{
-  left: 0;
-}
-.check:checked ~.header-menu>div{
-  transform: scale(1);
-}
-
-.header-menu{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  z-index: 2;
-
-  
-}
-
-
-.header-menu ul{
-  display: flex;
-  flex-direction: column;
-}
-.header-menu li{
-  margin: 10px 0;
-}
-.header-menu li a{
-  float: left;
-  padding: 0;
+    }
+    nav ul{
+    flex-direction: column;
+    gap: 0.75rem;
+    }
 
 }
 
-.header-menu >div{
-  background: var(--green);
-  width: 100%;
-  height: 200vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-
-}
+@media(max-width: 860px) {
 
 }

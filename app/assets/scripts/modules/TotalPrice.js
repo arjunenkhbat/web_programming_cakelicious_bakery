@@ -90,7 +90,7 @@ class TotalPrice extends HTMLElement {
 
     listenToCustomEvent() {
         addEventListener("priceChanged", () => {
-            console.log("hi");
+            console.log("kkkkk");
             let productsList = JSON.parse(localStorage.getItem("cart"));
             if (productsList == null) {
                 this.shadowRoot.querySelector(".grand-total").innerHTML = "0₮";
@@ -103,8 +103,9 @@ class TotalPrice extends HTMLElement {
                 total += parseInt(productsList[i].price) * parseInt(productsList[i].quantity);
             }
             this.shadowRoot.querySelector(".grand-total").innerHTML = total + "₮";
-            this.shadowRoot.querySelector(".delivery").innerHTML = "5000₮"
-            this.shadowRoot.querySelector(".grand-total_A").innerHTML = total + 5000 + "₮"
+            this.shadowRoot.querySelector(".delivery").innerHTML = "5000₮";
+            this.shadowRoot.querySelector(".grand-total_A").innerHTML = !total ? "0₮" : (total + 5000) + "₮";
+
         })
     }
 

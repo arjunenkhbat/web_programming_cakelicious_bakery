@@ -136,6 +136,7 @@ class CartTable extends HTMLElement {
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
+
                         <p>${productsList[i].calories}</p>
                     </div>
                     <p class="cart-item-perprice">${productsList[i].price}</p>
