@@ -1,4 +1,4 @@
-:root{
+/* :root{
     --color-body: #FFF3E1;
     --color-h:#61868C;
     --color-pink: pink;
@@ -165,8 +165,28 @@ body {
 }
 
 @media(max-width: 693px){
-    .art-container{
+section{
+    display: flex;
+    flex-direction: row;
+}
+} */
+main{
+    width: 85%;
+    margin: auto;
+}
+
+.art-container{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 3rem 0;
+    justify-content: space-between;
+}
+
+
+@media(max-width: 693px) {
+    section {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 }
