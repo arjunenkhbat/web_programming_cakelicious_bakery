@@ -183,6 +183,16 @@ main{
     justify-content: space-between;
 }
 
+.art{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.art li{
+    list-style: none;
+}
+
 
 @media(max-width: 693px) {
     section {
