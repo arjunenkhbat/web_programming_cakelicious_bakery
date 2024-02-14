@@ -190,7 +190,9 @@ main{
 .art-video{
     gap: 1rem;
 }
-
+.art-video img{
+width: 100%;
+}
 
 @media(max-width: 693px) {
     .art-container {

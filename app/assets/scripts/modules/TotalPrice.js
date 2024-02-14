@@ -16,23 +16,26 @@ class TotalPrice extends HTMLElement {
                 border-radius: 0.25rem;
                 box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
                 margin: 20px 0;
-                padding:1rem;
+                
 
             }
 
             .cart-calculator-container{
-                display: grid;
-                grid-template-columns: 60% 40%;
+                display: flex;
+                flex-direction:row;
                 justify-content: space-between;
                 align-items: center;
                 height: max-content;
                 width: 100%;
-                margin: auto;
-                padding-left:15px;
+                margin: 0 10px ;
+                padding:0 15px ;
+                
                
             }
             .une{
                 font-weight: 600;
+                padding: 0 2rem;
+                margin: 0.5rem;
 
             }
             hr {
@@ -76,7 +79,7 @@ class TotalPrice extends HTMLElement {
                 <hr>
                 <div class="cart-calculator-container">
                     <p class="tailbar">Нийт төлбөр :</p>
-                    <p class=" une grand-total_A">0₮</p>
+                    <p class="une grand-total_A">0₮</p>
                 </div>
             <button class="cart-addbtn">Худалдаж авах</button>
             </aside>
