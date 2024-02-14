@@ -28,14 +28,14 @@ class CardComponent extends HTMLElement {
     setUp() {
         if (this.getAttribute("mode") != "menu") {
 
-         
+
             if (this.getAttribute("mode") == "delivery-item") {
                 this.setDeliveryCard();
             }
         }
     }
 
-   
+
 
     setDeliveryCard() {
 
@@ -46,7 +46,8 @@ class CardComponent extends HTMLElement {
             let product = {
                 name: this.getAttribute("name"),
                 price: this.querySelector(".price").innerHTML,
-             
+
+
                 quantity: 1
             }
 
