@@ -2,6 +2,7 @@
 
 
 // class DeliveryProductCard extends HTMLElement {
+// class DeliveryProductCard extends HTMLElement {
 
 //     constructor() {
 //         super();
@@ -48,11 +49,13 @@
 //         })
       
 //     }
+//     }
 
 //     attributeChangedCallback(name, oldValue, newValue) {
 //         this.shadowRoot.querySelector(".delivery-item #delivery-item-section .delivery-image").id = this.getAttribute("id");
 //         this.shadowRoot.querySelector(".delivery-item #delivery-item-section .delivery-image").src = this.getAttribute("imgSrc");
 //         this.shadowRoot.querySelector(".delivery-item #delivery-item-section .delivery-image").alt = this.getAttribute("imgAlt");
+//         this.shadowRoot.querySelector(".delivery-item #delivery-item-section .delivery-title").innerHTML = this.getAttribute("productName");
 //         this.shadowRoot.querySelector(".delivery-item #delivery-item-section .delivery-calories").innerHTML = this.getAttribute("productCalories");  
 //         this.shadowRoot.querySelector(".delivery-item #delivery-item-section .price").innerHTML = this.getAttribute("productPrice");
 //     }   

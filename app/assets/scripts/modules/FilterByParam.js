@@ -1,8 +1,11 @@
 import Products from "./Products.js";
 
+//url-ийн parameter-ийг авах
 var usp = new URLSearchParams(window.location.search);
+//бүтээгдэхүүний json файлын uri-г тодорхойлох
 const uri = "app/assets/scripts/modules/json/products.json";
 
+// If the "category" parameter is not present in the URL
 if (!usp.has("category")) {
     const products = new Products(
         uri,
@@ -13,13 +16,16 @@ if (!usp.has("category")) {
 
 var products;
 
+//url доторх category элемент дээр switch statement ашиглан шилжүүлэх
 switch (usp.get("category")) {
     case "MilkyCream":
+        //milkycream category үүсгээд бүтээгдэхүүн татаж харуулах
         products = new Products(
             uri,
             "MilkyCream"
         );
         products.download("product-container");
+        //хуудсын гарчгийг категорийн дагуу солих
         document.getElementById("page-title").textContent = "Сүүн кремтэй бялуу";
         break;
     case "Maslo":
@@ -65,12 +71,20 @@ switch (usp.get("category")) {
 }
 
 const urlParams = new URLSearchParams();
-
+//бүрэн ачааллаж дууссан үед
 window.onload = () => {
+
+    //milky  cream button дарагдсан үеийн event listener category-г milky cream болгоод 
     document.getElementById("MilkyCream").addEventListener("click", () => {
+
+        // "category" параметрийг "MilkyCream" болгох
         urlParams.set("category", "MilkyCream");
+        
+        // Шинэчлэгдсэн URL руу шинэ асуулгын параметрүүдээр дахин чиглүүлэх
         window.location.href = "?" + urlParams.toString();
     });
+
+    // "Maslo" элементийн товчлуурын дараах товчлуурын дараах event listener
     document.getElementById("Maslo").addEventListener("click", () => {
         urlParams.set("category", "Maslo");
         window.location.href = "?" + urlParams.toString();

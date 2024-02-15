@@ -10,15 +10,14 @@
                                 /*main heseg*/
 
                                 /*../images_for_zorigoo/iStock-844714534.jpg*/
-.main-showcase{
-    background: url('/app/assets/images/iStock-844714534.jpg') center center/cover;
-    height: 450px;
-    background-color: #fff;
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-    width: 100%;
+/* .main-showcase{
+    
+  
+    
+} */
+.mySlides{
+    height: 600px;
 }
-
 .main-branchCake{
     display: flex;
     flex-direction: row;

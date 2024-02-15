@@ -14,8 +14,13 @@
 <body class="main-body">
   <header-component></header-component>
 <main class="main">
-        <section class="main-showcase"> 
-        </section>
+      
+  <div class="w3-content w3-section" >
+    <img class="mySlides" src="/app/assets/images/iStock-844714534.jpg" style="width:100%">
+    <img class="mySlides" src="/app/assets/images/iStock-1192522394.jpg" style="width:100%">
+    <img class="mySlides" src="/app/assets/images/iStock-1438180811.jpg" style="width:100%">
+  </div>
+          
         <section class="main-branchCake">
             <div class="main-branch">
                 <p>Салбарын мэдээлэл</p>
@@ -88,6 +93,21 @@
 </main>
 
 <footer-component></footer-component>
-
+<script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  </script>
 </body>
 </html>

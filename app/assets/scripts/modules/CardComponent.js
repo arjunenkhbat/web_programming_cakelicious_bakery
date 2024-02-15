@@ -13,7 +13,7 @@ class CardComponent extends HTMLElement {
     }
     // Сонгосон аттрибутуудыг мөн хянана
     static get observedAttributes() {
-        return ["id", "imgSrc", "theme", "imgAlt", "name", "calories", "description", "price", "mode"];
+        return ["id", "imgSrc", "imgAlt", "name", "calories", "description", "price", "mode"];
     }
     // Аттрибутуудыг өөрчилж байгаа үед холбоотой элемэнтийг шинэчилж өгөх
     attributeChangedCallback(name, oldValue, newValue) {
@@ -22,9 +22,9 @@ class CardComponent extends HTMLElement {
         this.shadowRoot.querySelector("article div img").alt = this.getAttribute("imgAlt");
         this.shadowRoot.querySelector("article div img").height = this.getAttribute("mode") == "menu" ? 80 : 200;
         this.shadowRoot.querySelector(".card-title").innerHTML = this.getAttribute("name");
-        // this.setTheme(this.getAttribute("theme"));
     }
 
+     // Set up the element based on its mode
     setUp() {
         if (this.getAttribute("mode") != "menu") {
 
@@ -39,10 +39,11 @@ class CardComponent extends HTMLElement {
 
     setDeliveryCard() {
 
+        //order-button элементийг shadow dom-оос авах
         var addToCartButton = this.shadowRoot.getElementById("order-button");
 
         addToCartButton.addEventListener("click", () => {
-
+        // Create a product object with information from the card
             let product = {
                 name: this.getAttribute("name"),
                 price: this.querySelector(".price").innerHTML,
@@ -50,9 +51,10 @@ class CardComponent extends HTMLElement {
 
                 quantity: 1
             }
-
+            // Get the cart component from the document
             const cart = document.querySelector("cart-component");
 
+            // Check if the product is already in the cart
             let isFoundInArray = false;
             for (let i = 0; i < cart.productsList.length; i++) {
                 if (cart.productsList[i].name == product.name) {
@@ -60,7 +62,7 @@ class CardComponent extends HTMLElement {
                     break;
                 }
             }
-
+            // Add the product to the cart if not found, otherwise show an alert
             !isFoundInArray ? cart.addToCart(product) : window.alert("Бараа сагсанд орсон байна. Тоо ширхэгийг тохируулах бол Сагс цэс рүү орно уу.");
 
         })
@@ -113,7 +115,7 @@ class CardComponent extends HTMLElement {
 </style>
                         <article class="card-item">
                             <div id="item-section">
-                                <img class="card-image">
+                                <img class="card-image" src="/app/assets/images/Mousse.png" alt="byaluuu">
                                 <h2 class="card-title"></h2>
                                 <slot name="card-calories"></slot>
                                 <slot name="card-line"></slot>

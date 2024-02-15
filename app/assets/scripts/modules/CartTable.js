@@ -1,4 +1,3 @@
-
 // TotalPrice.js файлаас шаардлагатай функцуудыг импортолж оруулна
 import "./TotalPrice.js"
 
@@ -257,5 +256,4 @@ class CartTable extends HTMLElement {
     }
 
 }
-
 window.customElements.define("cart-table", CartTable);
