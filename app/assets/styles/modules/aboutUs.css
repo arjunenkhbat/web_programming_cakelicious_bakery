@@ -12,6 +12,7 @@
     justify-content:space-around;
     gap: 1rem;
     padding: 2rem 0;
+    transition: 0.5s all ease-in-out;
     /* width: 20%;
     height: auto;
     margin-left: 10%;
@@ -27,6 +28,8 @@
 .about-article img{
     width: 25%;
     height: auto;
+    border-radius: 10%;
+    transition: 0.5s all ease-in-out;
 }
 
 @media(max-width: 693px){

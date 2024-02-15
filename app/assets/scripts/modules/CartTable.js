@@ -1,4 +1,3 @@
-
 // TotalPrice.js файлаас шаардлагатай функцуудыг импортолж оруулна
 import "./TotalPrice.js"
 
@@ -41,7 +40,8 @@ class CartTable extends HTMLElement {
                     .cart-item{
                         background-color: #fff;
                         display: grid;
-                        grid-template-columns: 18% 30% 13% auto 15% auto;
+                        grid-template-columns: 20% 20% 13% auto 15% 5%;
+                        justify-content:space-between;
                         align-items: center;
                         padding: 0 2rem 0 0;
                         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
@@ -127,9 +127,9 @@ class CartTable extends HTMLElement {
                     </style>
 
                     <div class="cart-item">
-                        <img class="cart-item-img" src="${productsList[i].img}" alt="byluunii zurag1" >
+                        <div><img class="cart-item-img" src="${productsList[i].img}" alt="byluunii zurag1" ></div>
 
-                    <div >
+                    <div>
                         <p class="cart-item-name">${productsList[i].name}</p>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -149,6 +149,7 @@ class CartTable extends HTMLElement {
                     <p class="cart-item-totalprice">${parseInt(productsList[i].price) * parseInt(productsList[i].quantity)}₮</p>
                     <i class="material-icons remove"  style="font-size:36px; color: var(--green);">&times;</i>
                     </div>
+                    
             
                    
             `
@@ -255,5 +256,4 @@ class CartTable extends HTMLElement {
     }
 
 }
-
 window.customElements.define("cart-table", CartTable);

@@ -1,5 +1,6 @@
 import CardComponent from "./CardComponent.js";
 window.customElements.define("card-component", CardComponent);
+// "card-component" гэсэн custom элементийг CardComponent class-аар тодорхойлно
 
 class ProductItem {
     constructor(item) {
@@ -22,19 +23,6 @@ class ProductItem {
                     imgSrc="${this.image}"
                     imgAlt="${this.name}"
                     name="${this.name}"
-                    theme="${window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"}">
-                    </card-component>
-                `;
-                break;
-            case "menu-item":
-                result = `
-                    <card-component id="${this.id}" 
-                    mode="${mode}"
-                    imgSrc="${this.image}"
-                    imgAlt="${this.name}"
-                    name="${this.name}"
-                    theme="${window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"}">
-                        <p slot="card-calories" class="calories">${this.calories}</p>                        
                     </card-component>
                 `;
                 break;
@@ -45,7 +33,7 @@ class ProductItem {
                     imgSrc="${this.image}"
                     imgAlt="${this.name}"
                     name="${this.name}"
-                    theme="${window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"}">
+                    
                         <p slot="card-calories" class="calories">${this.calories}</p> 
                         <hr slot="card-line">  
                         <p slot="card-price" class="price">${this.price}</p>  
