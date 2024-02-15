@@ -2,6 +2,7 @@
 
 
 // class DeliveryProductCard extends HTMLElement {
+// class DeliveryProductCard extends HTMLElement {
 
 //     constructor() {
 //         super();
@@ -47,6 +48,7 @@
 //             console.log("Added to cart");
 //         })
       
+//     }
 //     }
 
 //     attributeChangedCallback(name, oldValue, newValue) {

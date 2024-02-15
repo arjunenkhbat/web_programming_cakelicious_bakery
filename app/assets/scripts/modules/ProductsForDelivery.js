@@ -1,30 +1,30 @@
-import CardComponent from "../components/CardComponent.js";
-window.customElements.define("card-component", CardComponent);
+// import CardComponent from "../components/CardComponent.js";
+// window.customElements.define("card-component", CardComponent);
 
-class ProductItem {
-    constructor(item) {
-        this.name = item.name;
-        this.category = item.category;
-        this.calories = item.calories;
-        this.description = item.description;
-        this.price = item.price;
-        this.image = item.image;
-    }
+// class ProductItem {
+//     constructor(item) {
+//         this.name = item.name;
+//         this.category = item.category;
+//         this.calories = item.calories;
+//         this.description = item.description;
+//         this.price = item.price;
+//         this.image = item.image;
+//     }
 
-    render() {
-        return `
-            <card-component id="${this.id}"
-            mode="delivery-item" 
-            imgSrc="${this.image}" 
-            imgAlt="${this.name}" 
-            name="${this.name}" 
-            calories="${this.calories}"
-            description="${this.description}"
-            price="${this.price}">
-            </card-component>
-           `;
-    }
-}
+//     render() {
+//         return `
+//             <card-component id="${this.id}"
+//             mode="delivery-item" 
+//             imgSrc="${this.image}" 
+//             imgAlt="${this.name}" 
+//             name="${this.name}" 
+//             calories="${this.calories}"
+//             description="${this.description}"
+//             price="${this.price}">
+//             </card-component>
+//            `;
+//     }
+// }
 
 // export default class ProductsForDelivery {
 //     constructor(productsUrl, category) {

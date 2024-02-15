@@ -14,22 +14,22 @@
 //         return ["id", "imgSrc", "imgAlt", "productName", "productCalories", "productDescription"];
 //     }
 
-//     connectedCallback() {
-//         this.addEventListener("click", () => {
-//             this.insertAdjacentHTML("afterend", `
-//             <link id="style" rel="stylesheet" href="./styles/productCardStyle.css">
-//             <div class="modal active" id="modal">
-//                 <div class="modal-body">
-//                     <button data-close-button class="close-button" id="close-button">&times;</button>
-//                     <img src="${this.getAttribute("imgSrc")}" alt="${this.getAttribute("imgAlt")}"class="product-image" height="200">
-//                     <h2 class="product-title">${this.getAttribute("productName")}</h2>
-//                     <h4 class="product-calories">${this.getAttribute("productCalories")}</h4>
-//                     <p class="product-description">${this.getAttribute("productDescription")}</p>
-//                 </div>
-//             </div>
-//             <div class="active" id="overlay"></div>
-//             `
-//             );
+    connectedCallback() {
+        this.addEventListener("click", () => {
+            this.insertAdjacentHTML("afterend", `
+            <link id="style" rel="stylesheet" href="./styles/productCardStyle.css">
+            <div class="modal active" id="modal">
+                <div class="modal-body">
+                    <button data-close-button class="close-button" id="close-button">&times;</button>
+                    <img src="${this.getAttribute("imgSrc")}" alt="${this.getAttribute("imgAlt")}"class="product-image" height="200">
+                    <h2 class="product-title">${this.getAttribute("productName")}</h2>
+                    <h4 class="product-calories">${this.getAttribute("productCalories")}</h4>
+                    <p class="product-description">${this.getAttribute("productDescription")}</p>
+                </div>
+            </div>
+            <div class="active" id="overlay"></div>
+            `
+            );
 
 //         }
 //         )

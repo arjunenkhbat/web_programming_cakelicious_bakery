@@ -4,8 +4,8 @@
 
 .cake-total{
     
-    display: grid;
-    grid-template-columns: 70% 20%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -59,7 +59,7 @@
     background-color: #7CA27E;
     color: #fff;
     border-color: #7CA27E;
-    width: 18%;
+    width: max-content;
     cursor: pointer;
     transition: all 150ms ease-in-out 0s;
     
@@ -67,7 +67,7 @@
 .cart-add-btn{
     width: max-content;
     color: #fff;
-    
+    padding: 0.5rem 1rem ;
 
 }
 
@@ -264,4 +264,18 @@
 .cake-recommendation img{
     width: 55%;
     height: auto;
+}
+
+@media(max-width: 1200px) {
+   
+
+    .cake-total {
+        flex-direction: column;
+
+    }
+
+    .cart-item{
+        display: none;
+    }
+    
 }
